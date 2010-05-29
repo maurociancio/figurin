@@ -1,6 +1,8 @@
 
 #include <iostream>
 #include <fstream>
+#include <sstream>
+
 using namespace std;
 
 #ifdef WIN32
@@ -116,10 +118,12 @@ int main(int argc, char** argv)
 	//creo la red neuronal
 	struct fann *ann = fann_create_from_file(archivoRed);
 
-int counter =1;
+	int contador = 1;
+
   // Render contours:
   for (CvBlobs::const_iterator it=blobs.begin(); it!=blobs.end(); ++it)
   {
+		ostringstream label; 
    // cvRenderBlob(labelImg, (*it).second, img, imgOut);
 
 		//obtengo el poligono que define el blob
@@ -159,13 +163,13 @@ int counter =1;
 	 std::cout << "relacion promedio distancias /max dist al centroide: "<< relDistancias<< std::endl; 
 	 std::cout << "cantidad de vertices poligono: "<< verticesPoligono<< std::endl; 
 	 std::cout << "cantidad de vertices poligono simplificado: "<< verticesPoligonoSimple << std::endl ; 
-*///:cout << "area de poligono simplificado: "<< areaBlob<< std::endl;
+*/	 std::cout << "area de poligono simplificado: "<< areaBlob<< std::endl;
 /*	 std::cout << "area de la boundingBox: "<< areaMinimoRect << std::endl;
 	 std::cout << "relacion area poligono : "<< areaBlob/areaMinimoRect<< std::endl;
 	 std::cout << "vertices / 50: " << verticesPoligonoSimple/100.0f<< std::endl ; 
 */
 
-   //std::cout << relVertices << ";"<<relArea<<";"<<relDistancias<<";"<<endl;
+   std::cout << relVertices << ";"<<relArea<<";"<<relDistancias<<";"<<endl;
 /*
 	 datos  << relVertices  <<" " 
 				  << (relArea>1?1:relArea) <<" "
@@ -181,20 +185,21 @@ int counter =1;
 	entradas[2] = relDistancias;
 
 	resultado = fann_run(ann, entradas);
-cout << counter << " & " << entradas[0]  << " & " << entradas[1]   << " & " << entradas[2] << " & " << resultado[0]    << " & " << resultado[1]   << " & " << resultado[2]  << "\\\\"<< endl<< "\\hline" <<endl;
-//	cout << resultado[0] <<";"<<resultado[1] <<";"<<resultado[2] <<";"<<endl;
-	string nombreFigura = getNombreFigura(resultado[0],resultado[1],resultado[2]);
-//	cout<< "es: " << nombreFigura << endl<<endl;
+	cout << resultado[0] <<";"<<resultado[1] <<";"<<resultado[2] <<";"<<endl;
+	label << contador << ". " << getNombreFigura(resultado[0],resultado[1],resultado[2]);
+	cout<< "es: " << label.str() << endl<<endl;
+
 
 	CvPoint blobPos = cvPoint((*it).second->minx,(*it).second->maxy+14);
 	CvPoint rectInicio= cvPoint(blobPos.x,blobPos.y+2);
-	CvPoint rectFin= cvPoint(blobPos.x+80,blobPos.y-12);
+	CvPoint rectFin= cvPoint(blobPos.x+9*label.str().size(),blobPos.y-12);
   cvRectangle(imgOut, rectInicio,rectFin, cvScalar(200, 200, 200, 0), CV_FILLED, 8, 0);
-  cvPutText(imgOut, nombreFigura.c_str(),blobPos, &fuente, cvScalar(0, 0, 0, 0));
+  cvPutText(imgOut,label.str().c_str(),blobPos, &fuente, cvScalar(0, 0, 0, 0));
 
     delete sPolygon;
     delete polygon;
-counter++;
+		contador++;
+
   }
 
 
