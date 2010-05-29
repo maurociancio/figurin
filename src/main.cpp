@@ -18,7 +18,7 @@ using namespace cvb;
 
 
 //funcion que calcula el cuadrado de la maxima distancia al centroide de un poligono 
-double getMaxDistAlVaricentro(double xc, double yc, const CvContourPolygon & poly){
+double getMaxDistAlVaricentro(const double & xc, const double & yc, const CvContourPolygon & poly){
 		double max =0.0f;
 		std::vector<CvPoint>::const_iterator it = poly.begin();
 		while(it!=poly.end()){
@@ -32,7 +32,7 @@ double getMaxDistAlVaricentro(double xc, double yc, const CvContourPolygon & pol
 }
 
 //funcion que calcula el promedio del cuadrado de la distancia al centroide de un poligono 
-double getPromedioSqDistancias(double xc, double yc, const CvContourPolygon & poly){
+double getPromedioSqDistancias(const double & xc, const double & yc, const CvContourPolygon & poly){
 
 	double suma=0;
 		std::vector<CvPoint>::const_iterator it = poly.begin();
