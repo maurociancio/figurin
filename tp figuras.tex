@@ -1,0 +1,304 @@
+\documentclass[pdftex,a4paper,12pt]{article}
+%\usepackage{graphicx}
+\usepackage{float}
+\usepackage[pdftex]{graphicx}
+%\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+
+\pretolerance=2000
+\tolerance=3000
+
+\title{Reconocimiento de Figuras Utilizando Redes Neuronales}
+
+\author{ \textbf{Facultad de Ingenier\'ia de la Universidad de Buenos Aires}\\
+\textbf{75.70} \\ \\ 
+Ciancio Alessio, Mauro - \textit{Padr\'on Nro. 86.357} \\
+\texttt{maurociancio@gmail.com} \\
+Gilioli, Leandro - \textit{Padr\'on Nro. 86.075} \\
+\texttt{legilioli@gmail.com} \\
+L\'opez El\'ias, Lucas - \textit{Padr\'on Nro. 85.747} \\
+\texttt{lucasdle@gmail.com} \\
+Ucciani, Juan - \textit{Padr\'on Nro. 86.473} \\
+\texttt{jucciani@gmail.com} \\
+Yoan, Norberto - \textit{Padr\'on Nro. 87.429} \\
+\texttt{njytito@gmail.com} \\[2.5ex]
+}
+\date{1er Cuatrimestre de 2010}
+
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+	Desarrollo de una aplicaci\'on de reconocimiento de figuras a partir del uso y entrenamiento de redes neuronales. Involucra un an\'alisis previo de las figuras cuyo objetivo es encontrar la forma de normalizar los datos a ingresar en la red neuronal.
+	
+	Se entrena la red neuronal con figuras conocidas. Luego cuando la red est\'a en producci\'on las salidas obtenidas al introducir los datos preprocesados indican el tipo de figura que se reconoci\'o.
+\end{abstract}
+
+\thispagestyle{empty}
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introducci\'on}
+El presente trabajo utiliza redes neuronales para la detecci\'on de figuras geom\'etricas. 
+La aplicaci\'on desarrollada toma una imagen que contiene figuras (cuadrados, tri\'angulos y c\'irculos), y procesa la misma para lograr la normalizaci\'on de los datos con la finalidad de obtener entradas para la red neuronal. 
+Una vez procesados los datos de entrada que representan a las figuras de la imagen, la red detecta el tipo de figura con un cierto margen de error.
+
+
+\section{Desarrollo}
+El presente trabajo se encuentra organizado en las siguientes secciones:
+%\textit{Estado actual de desarrollo} nos da una idea de la evolucin de aplicaciones similares en el ámbito de deteccin de figuras. 
+\textit{Presentaci\'on del Problema} presenta el dilema a resolver.
+\textit{Resoluci\'on} muestra la definici\'on de la soluci\'on planteada para resolver el problema anterior. 
+\textit{Resultados} muestra luego de aplicar la soluci\'on a un conjunto de entradas que representa al espectro de entradas posibles, las diferentes salidas de la aplicaci\'on desarrollada.
+Finalmente la secci\'on \textit{Conclusiones} muestra el resultado del an\'alisis del funcionamiento de la aplicaci\'on.
+
+%\subsection{Estado actual de desarrollo}
+ %estado de la cuestin
+%[FUMARse gugle e ieee]
+
+\subsection{Presentaci\'on del Problema}
+El problema principal que se intenta resolver es reconocer que tipo de figura se encuentra presente en una imagen digital mediante el uso de una red neuronal. Deben poder identificarse correctamente cuadrados, tri\'angulos y c\'irculos. De este problema deriva uno secundario que consiste en procesar adecuadamente la imagen para obtener datos normalizados que sean apropiados para utilizar en la red neuronal. Adem\'as, se deber\'a realizar un entrenamiento de la misma, ajust\'andola de manera que los resultados obtenidos demuestren que se logra la generalizaci\'on de los casos presentados. Se intentar\'a lograr el reconocimiento tanto de figuras que est\'en claramente definidas como tambi\'en de casos en los cuales haya deformaciones o se pueda dar lugar a confusi\'on.
+
+
+\subsection{Resoluci\'on}
+Se encar\'o el problema dividi\'endolo en dos m\'odulos.
+%habrìa que tirar unos items aca, ahora veo como se haría
+\begin{itemize}
+\item 
+M\'odulo de representaci\'on: obtiene, a partir de la imagen provista, una representaci\'on conveniente para su utilizaci\'on por el segundo m\'odulo. La tarea que realiza es el an\'alisis de la imagen de entrada en busca de BLOBS que luego son representados por medio de pol\'igonos de los cuales se extrae informaci\'on caracter\'istica de inter\'es que ser\'a luego alimentada al m\'odulo de la siguiente etapa.
+\item
+M\'odulo de interpretaci\'on: proporciona a partir del conjunto de formas u objetos presentes en la imagen y la representaci\'on convenientemente proporcionada por el m\'odulo de representaci\'on, la forma a la que pertenece el objeto, distinguiendo entre 3 posibles casos: cuadrado, tri\'angulo o c\'irculo.
+\end{itemize}
+
+
+
+Los pasos realizados por estos m\'odulos se explican a continuaci\'on:
+
+\subsubsection{Pasos}
+Para la detecci\'on de las figuras, se realiza el siguiente procedimiento:
+			\begin{enumerate}
+			  	\item	Se carga en memoria una imagen del archivo que se pasa como 1er
+			  	argumento por l\'inea de comando. La aplicaci\'on soporta los formatos m\'as
+			  	comunes (png, jpg, bmp, gif).
+				\item	Se convierte la imagen a una escala de grises.
+				\item 	A partir de la imagen transformada a escala de grises, se hace una
+				detecci\'on de los blobs. En este paso se le especifica un umbral para el
+				proceso de detecci\'on.
+				\item	Se filtran los blobs detectados segun el \'area de la figura.
+				\item	Con los blobs resultantes se obtienen los datos que se introducir\'an
+				en la red neuronal ($ s_{1}, s_{2}, s_{3} $). Estos datos se obtienen a partir de 				           		caracter\'isticas de los blobs:
+					\begin{itemize}
+                      \item	Distancias promedio al punto central de los v\'ertices
+                      del pol\'igono que definen al blob. Se normalizan
+                      dividiendo esta distancia por la distancia al v\'ertice m\'as
+                      alejado.
+                      
+  					  \begin{equation} s_{1} = \frac { \sum_{i=1}^{n} { {|\vec {x}_{i} - \vec{x}_{c}|^{2}} } }
+				      { \max ( {|\vec{x}_{1} - x_{c}|^{2}}, ... , {|\vec{x}_{n} - \vec{x}_{c}|^{2}} ) }		\end{equation}
+
+					  $ \vec{x}_{i}:  $	 \textit{i-\'esimo punto del pol\'igono. }
+					  
+					  $ \vec{x}_{c}:  $	 \textit{centroide del pol\'igono. }
+						
+                      \item	\'Area del pol\'igono que define el blob dividido el 
+                      \'area del rect\'angulo de \'area m\'inima que contiene a ese blob.
+                      
+  					  \begin{equation} s_{2} = \frac { Area Blob }
+				                      { Area R_{m}}		\end{equation}
+
+					  $ R{m}:  $	 \textit{ Rect\'angulo de \'area m\'inima que contiene al Blob. }
+
+                      \item N\'umero de v\'ertices del pol\'igono simplificado que
+                      define al blob. Cuando se detecta un blob, se le pide a la
+                      biblioteca utilizada un pol\'igono que define a ese blob
+                      (una lista de puntos x,y). El problema que surge es que
+                      esa lista contiene muchos puntos que est\'an de m\'as o son
+                      redundantes, por lo que se aplica un algoritmo[4] para la
+                      reducci\'on de los mismos que elimina los puntos que no son
+                      necesarios sin deformar al pol\'igono.
+                      
+  					  \begin{equation} s_{3} = \frac { \#Vertices }
+				                      { K  }		\end{equation}
+
+					  $ K:  $	 \textit{M\'axima cantidad de v\'ertices del pol\'igono simplificado. }
+                      
+ 					\end{itemize} 
+				\item   Una vez obtenidos los datos, estos son ingresados a la red neuronal
+				que posee 3 neuronas de salida.
+				\item La neurona que produzca el mayor valor a la salida de la red neuronal corresponde
+				al tipo de figura ingresada.
+
+            \end{enumerate}      
+
+Se utiliz\'o una red neuronal del tipo feed-forward entrenada con back-propagation. La implementaci\'on 
+utilizada es la que brinda la biblioteca FANN[3]. La topolog\'ia consiste en una capa de entrada con 3
+neuronas, una capa oculta con 6 neuronas y una capa de salida con 3 neuronas. Estos valores fueron 
+definidos luego de realizar varias pruebas con diferentes topolog\'ias posibles y ver que se obten\'ia 
+un buen grado de generalizaci\'on con un n\'umero reducido de neuronas. La funci\'on de activaci\'on 
+elegida fue una sigmoidal.
+
+La biblioteca utilizada realiza el entrenamiento ajustando continuamente los pesos de manera que 
+la salida de la red  concuerde con la salida especificada en el archivo de entrenamiento. Para 
+determinar en que nivel la red se ajusta a los resultados deseados, utiliza el cuadrado de la media 
+del error, es decir, el promedio del cuadrado de la diferencia entre la salida actual y la buscada para
+cada uno de los casos de entrenamiento. El ciclo se detiene cuando este valor es menor al especificado
+al crear la red. Dicho par\'ametro fue probado con valores de 0.01 y 0.001, resultando este \'ultimo el 
+elegido por arrojar los mejores resultados.
+
+Para el entrenamiento de la red se utilizaron 15 casos provenientes de una imagen con 15 figuras especialmente seleccionadas para intentar cubrir un buen espectro de posibles casos.
+   
+             \begin{figure}[H]
+	                  \begin{center}
+	                    \includegraphics[width=10cm]{prueba2.png}
+	                    \caption{\label{image_soleil} Figuras utilizadas para el entrenamiento. }
+	                  \end{center}
+	            \end{figure}
+
+
+%\includegraphics{Screenshot.png}
+
+%incluir imagen de las figuras utilizadas para entrenar la red y quizas una tabla con los valores obtenidos
+
+\subsubsection{Bibliotecas}
+La Bibliotecas utilizadas para el desarrollo de la aplicaci\'on son las
+siguientes:
+\begin{itemize}
+	\item	OpenCV[1]: Biblioteca open source para el procesamiento de im\'agenes.
+	\item	CvBlobs[2]: Utiliza OpenCV[1] de base y agrega funcionalidad para
+	detectar blobs.
+	\item	FANN[3]: Fast Artificial Neural Network, es una biblioteca open source
+	que implementa una red neuronal.
+\end{itemize}
+       
+
+\subsection{Resultados} %resultados
+
+Luego del proceso de entrenamiento de la red, se gener\'o una imagen con 27 figuras para probar el funcionamiento de la aplicaci\'on. Estas figuras presentan tama\~nos, orientaciones y geometr\'ias diversas para evaluar el grado de generalizaci\'on alcanzado.
+
+En la figura 2 se puede apreciar la salida de la aplicaci\'on en la cual puede verse el correcto funcionamiento de la misma en la gran mayor\'ia de los casos.
+
+               \begin{figure}[H]
+	                  \begin{center}
+	                    \includegraphics[width=10cm]{salida.png}
+	                    \caption{\label{image_soleil} Salida generada por la aplicaci\'on. }
+	                  \end{center}
+	            \end{figure}
+
+En la siguiente tabla se pueden apreciar los datos de entrada y salida de la red neuronal aplicada al caso de prueba presentado.
+
+\begin{tabular}{|l|c|c|c|c|c|c|c|}
+
+
+  \hline                       
+  \textbf{Nro. figura} & \textbf{s1} & \textbf{s2} & \textbf{s3} & \textbf{o1} & \textbf{o2} & \textbf{o3}\\
+  \hline
+1 & 0.09 & 0.501931 & 0.429022 & -0.400841 & 0.874661 & 0.881913\\
+\hline
+2 & 0.16 & 0.818416 & 0.986003 & -0.0299935 & 0.0167916 & 0.995633\\
+\hline
+3 & 0.03 & 0.525033 & 0.298739 & 0.000259697 & 0.963719 & -0.0195502\\
+\hline
+4 & 0.09 & 0.885339 & 0.970545 & -0.154687 & 0.0764821 & 0.968826\\
+\hline
+5 & 0.16 & 0.826922 & 0.981426 & -0.0328001 & -0.0114058 & 0.995752\\
+\hline
+6 & 0.06 & 0.565282 & 0.440037 & -0.187038 & 0.865939 & 0.628152\\
+\hline
+7 & 0.08 & 0.92399 & 0.95898 & 0.00971692 & -0.0130127 & 0.948951\\
+\hline
+8 & 0.07 & 0.935139 & 0.942009 & 0.241215 & -0.00531138 & 0.897525\\
+\hline
+9 & 0.16 & 0.805213 & 0.574191 & -0.0597811 & 0.0121769 & 0.994678\\
+\hline
+10 & 0.03 & 0.52258 & 0.50913 & 0.074963 & 0.965091 & -0.0317281\\
+\hline
+11 & 0.11 & 0.844769 & 0.420752 & -0.296356 & 0.0591101 & 0.981476\\
+\hline
+12 & 0.07 & 0.559536 & 0.426444 & -0.30731 & 0.853204 & 0.771183\\
+\hline
+13 & 0.03 & 0.569243 & 0.531243 & 0.221784 & 0.950825 & -0.0500024\\
+\hline
+14 & 0.05 & 0.560371 & 0.269605 & -0.0694876 & 0.886973 & 0.374593\\
+\hline
+15 & 0.1 & 0.83018 & 0.622082 & -0.274531 & 0.177072 & 0.973962\\
+\hline
+16 & 0.12 & 0.834392 & 0.579319 & -0.262567 & 0.0709805 & 0.986842\\
+\hline
+17 & 0.11 & 0.849251 & 0.868572 & -0.252228 & 0.0982414 & 0.98448\\
+\hline
+18 & 0.04 & 1.03352 & 0.567523 & 0.901198 & -0.156523 & 0.00253194\\
+\hline
+19 & 0.04 & 1.02941 & 0.999592 & 0.924509 & -0.0967755 & -0.0036156\\
+\hline
+20 & 0.12 & 0.835244 & 0.597069 & -0.260993 & 0.0702284 & 0.986967\\
+\hline
+21 & 0.04 & 1.04704 & 0.998991 & 0.931563 & -0.159844 & -0.0122672\\
+\hline
+22 & 0.15 & 0.808484 & 0.404354 & -0.133974 & 0.0181289 & 0.992957\\
+\hline
+23 & 0.04 & 1.0404 & 0.999445 & 0.929 & -0.136231 & -0.00900697\\
+\hline
+24 & 0.04 & 1.04464 & 0.999217 & 0.930648 & -0.151304 & -0.0110857\\
+\hline
+25 & 0.04 & 1.06663 & 0.998993 & 0.938655 & -0.228119 & -0.021959\\
+\hline
+26 & 0.08 & 0.895353 & 0.84685 & -0.0405284 & 0.0731732 & 0.944607\\
+\hline
+27 & 0.04 & 1.0387 & 0.98906 & 0.927815 & -0.131242 & -0.00798042\\
+\hline
+  
+\end{tabular}	      
+	        
+  $ s_{i}:  $	 \textit{ Entrada de la neurona n\'umero i de la capa de entrada.}\\
+  $ o_{i}:  $	 \textit{ Salida de la neurona n\'umero i de la capa de salida. }\\
+  $ o_{1}:  $	 \textit{ Corresponde a un cuadrado.}\\
+  $ o_{2}:  $	 \textit{ Corresponde a un tri\'angulo.}\\
+  $ o_{3}:  $	 \textit{ Corresponde a un c\'irculo.}\\
+
+\newpage
+\subsection{Conclusiones} %conclusiones
+
+	En base a los resultados obtenidos, al proceso de desarrollo de la aplicaci\'on y
+	entrenamiento de la red podemos elaborar las siguientes conclusiones:
+	
+	La preparaci\'on de los datos result\'o ser la tarea de mayor complejidad y clave para
+	lograr buenos resultados en el reconocimiento. Esto incluye la definici\'on de los atributos
+	discriminantes que permitan distinguir a la red entre los distintos tipos de figuras.
+	
+	Por otro lado, las bibliotecas preexistentes en el mundo del software libre orientadas
+	al procesamiento de im\'agenes facilitan la tarea de preparaci\'on y procesamiento 
+	de los datos.
+
+	Existen una gran cantidad de herramientas, y el desaf\'io se encuentra en encontrar
+	la m\'as adecuada y madura para realizar la tarea deseada.
+
+	La elecci\'on del tipo de red neuronal y la definici\'on de los aspectos antes mencionados
+	fue apropiada ya que se obtuvo un alto grado de precisi\'on como puede observarse
+	en los resultados expuestos.
+	
+	El tama\~no de la red no result\'o tan importante como la definici\'on de sus par\'ametros
+
+\section{Posteriores l\'ineas de Investigaci\'on} %Nuevas lineas de investigacin que se nos fueron ocurriendo
+A ser definido.
+
+\newpage
+\section{Referencias} %referencias( menos de 15)
+\begin{itemize}
+  \item [1] OpenCV: http://opencv.willowgarage.com/wiki/
+  \item [2] CvBlobs: http://code.google.com/p/cvblob/
+  \item [3] FANN: http://leenissen.dk/fann/ - http://sourceforge.net/projects/fann/
+  \item [4] Ramer-Douglas-Peucker algorithm: 
+
+  		http://en.wikipedia.org/wiki/Ramer-Douglas-Peucker\_algorithm
+  \item [5] BLOB: A definir.
+\end{itemize}
+
+
+
+%No tiene que tener menos de 7 hojas ni mas de 10
+%y en A4 abrochado.
+%formato paper.
+
+\end{document}
