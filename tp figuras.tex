@@ -67,7 +67,7 @@ Se encar\'o el problema dividi\'endolo en dos m\'odulos.
 %habrìa que tirar unos items aca, ahora veo como se haría
 \begin{itemize}
 \item 
-M\'odulo de representaci\'on: obtiene, a partir de la imagen provista, una representaci\'on conveniente para su utilizaci\'on por el segundo m\'odulo. La tarea que realiza es el an\'alisis de la imagen de entrada en busca de BLOBS que luego son representados por medio de pol\'igonos de los cuales se extrae informaci\'on caracter\'istica de inter\'es que ser\'a luego alimentada al m\'odulo de la siguiente etapa.
+M\'odulo de representaci\'on: obtiene, a partir de la imagen provista, una representaci\'on conveniente para su utilizaci\'on por el segundo m\'odulo. La tarea que realiza es el an\'alisis de la imagen de entrada en busca de BLOBS \cite{blobs} que luego son representados por medio de pol\'igonos de los cuales se extrae informaci\'on caracter\'istica de inter\'es que ser\'a luego alimentada al m\'odulo de la siguiente etapa.
 \item
 M\'odulo de interpretaci\'on: proporciona a partir del conjunto de formas u objetos presentes en la imagen y la representaci\'on convenientemente proporcionada por el m\'odulo de representaci\'on, la forma a la que pertenece el objeto, distinguiendo entre 3 posibles casos: cuadrado, tri\'angulo o c\'irculo.
 \end{itemize}
@@ -88,7 +88,7 @@ Para la detecci\'on de las figuras, se realiza el siguiente procedimiento:
 				proceso de detecci\'on.
 				\item	Se filtran los blobs detectados segun el \'area de la figura.
 				\item	Con los blobs resultantes se obtienen los datos que se introducir\'an
-				en la red neuronal ($ s_{1}, s_{2}, s_{3} $). Estos datos se obtienen a partir de 				           		caracter\'isticas de los blobs:
+				en la red neuronal ($ s_{1}, s_{2}, s_{3} $). Estos datos se denominan \textit{discriminantes basados en caracter\'isticas geom\'etricas} \cite{yangGillies} , y se obtienen a partir de 				           		caracter\'isticas de los blobs:
 					\begin{itemize}
                       \item	Distancias promedio al punto central de los v\'ertices
                       del pol\'igono que definen al blob. Se normalizan
@@ -114,8 +114,8 @@ Para la detecci\'on de las figuras, se realiza el siguiente procedimiento:
                       define al blob. Cuando se detecta un blob, se le pide a la
                       biblioteca utilizada un pol\'igono que define a ese blob
                       (una lista de puntos x,y). El problema que surge es que
-                      esa lista contiene muchos puntos que est\'an de m\'as o son
-                      redundantes, por lo que se aplica un algoritmo[4] para la
+                      esa lista contiene muchos puntos que pueden ser considerados redundantes,
+                      por lo que se aplica un algoritmo \cite{ramerDouglas} para la
                       reducci\'on de los mismos que elimina los puntos que no son
                       necesarios sin deformar al pol\'igono.
                       
@@ -165,10 +165,10 @@ Para el entrenamiento de la red se utilizaron 15 casos provenientes de una image
 La Bibliotecas utilizadas para el desarrollo de la aplicaci\'on son las
 siguientes:
 \begin{itemize}
-	\item	OpenCV[1]: Biblioteca open source para el procesamiento de im\'agenes.
-	\item	CvBlobs[2]: Utiliza OpenCV[1] de base y agrega funcionalidad para
+	\item	OpenCV \cite{openCV,openCVBook} : Biblioteca open source para el procesamiento de im\'agenes.
+	\item	CvBlobs \cite{cvBlob}: Utiliza OpenCV de base y agrega funcionalidad para
 	detectar blobs.
-	\item	FANN[3]: Fast Artificial Neural Network, es una biblioteca open source
+	\item	FANN \cite{fann}: Fast Artificial Neural Network, es una biblioteca open source
 	que implementa una red neuronal.
 \end{itemize}
        
