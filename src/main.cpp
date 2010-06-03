@@ -3,14 +3,12 @@
 #include <fstream>
 #include <sstream>
 #include <iomanip>
-
-using namespace std;
-
 #include <opencv/cv.h>
 #include <opencv/highgui.h>
 #include <fann.h>
 #include <cvblob.h>
 
+using namespace std;
 using namespace cvb;
 
 #define AREA_MAX 50000
@@ -18,6 +16,7 @@ using namespace cvb;
 #define MAX_VERTICES 100.0f
 #define ENTRADAS_RED 3
 #define CONST_SIMP 3.0f
+
 //funcion que calcula el cuadrado de la maxima distancia al centroide de un poligono
 double getMaxDistAlVaricentro(const double & xc, const double & yc, const CvContourPolygon & poly) {
     double max =0.0f;
@@ -119,9 +118,8 @@ int main(int argc, char** argv)
     int contador = 1;
 
     //itero por cada blob
-    for (CvBlobs::const_iterator it=blobs.begin(); it!=blobs.end(); ++it)
-    {
-        ostringstream label;
+    for (CvBlobs::const_iterator it=blobs.begin(); it!=blobs.end(); ++it){
+
         // cvRenderBlob(labelImg, (*it).second, img, imgOut);
 
         //obtengo el poligono que define el blob
@@ -163,38 +161,30 @@ int main(int argc, char** argv)
         entradas[2] = relDistancias;
         resultado = fann_run(ann, entradas);
 
-	//imprimo informacion procesada
-	 
-        /*
-        	 std::cout << "relacion promedio distancias /max dist al centroide: "<< relDistancias<< std::endl;
-        	 std::cout << "cantidad de vertices poligono: "<< verticesPoligono<< std::endl;
-        	 std::cout << "cantidad de vertices poligono simplificado: "<< verticesPoligonoSimple << std::endl ;
-        */
-    //    std::cout << "area de poligono simplificado: "<< areaBlob<< std::endl;
-        /*	 std::cout << "area de la boundingBox: "<< areaMinimoRect << std::endl;
-        	 std::cout << "relacion area poligono : "<< areaBlob/areaMinimoRect<< std::endl;
-        	 std::cout << "vertices / 50: " << verticesPoligonoSimple/100.0f<< std::endl ;
-        */
-
-        /*
-        	 datos  << relVertices  <<" "
-        				  << (relArea>1?1:relArea) <<" "
-        				  << relDistancias << endl <<endl;
-        */
-//   cvRenderContourChainCode(&(*it).second->contour, imgOut);
-//   cvRenderContourPolygon(sPolygon, imgOut, CV_RGB(0, 255,255));
-//   cvRenderContourPolygon(cPolygon, imgOut, CV_RGB(0, 255, 0));
-
-	cout << "Figura " << contador<< ":" <<endl;
-	cout.precision(4);
-	cout << "s0: " << fixed << relVertices << endl;
-	cout << "s1: " << fixed << relArea << endl;
-	cout << "s2: " << fixed << relDistancias << endl;
-        cout << "o0: " << fixed << resultado[0] << endl;
-	cout << "o1: " << fixed << resultado[1] << endl;
-	cout << "o2: " << fixed << resultado[2] <<  endl;
+				//Output de los datos en consola
+				cout << "Figura " << contador<< ":" <<endl;
+				cout.precision(4);
+				cout << "s0: " << fixed << relVertices << endl;
+				cout << "s1: " << fixed << relArea << endl;
+				cout << "s2: " << fixed << relDistancias << endl;
+				cout << "o0: " << fixed << resultado[0] << endl;
+				cout << "o1: " << fixed << resultado[1] << endl;
+				cout << "o2: " << fixed << resultado[2] <<  endl;
         cout<< "Tipo: " << getNombreFigura(resultado[0],resultado[1],resultado[2]) << endl<<endl;
 
+
+	/*			cout.precision(3);
+				cout << contador << " & "<< fixed << relVertices;
+				cout << " & "<< fixed << relArea;	
+				cout << " & "<< fixed << relDistancias;	
+				cout << " & "<< fixed << resultado[0];
+				cout << " & "<< fixed << resultado[1];
+				cout << " & "<< fixed << resultado[2]<< "\\\\" << endl<< "\\hline" <<endl;
+*/
+//1 & 0.09 & 0.501931 & 0.429022 & -0.400841 & 0.874661 & 0.881913\\
+
+				//dibujo en la imagen el número y el tipo de poligono que se reconoció
+        ostringstream label;
         label << contador << ". " << getNombreFigura(resultado[0],resultado[1],resultado[2]);
         CvPoint blobPos = cvPoint((*it).second->minx,(*it).second->maxy+14);
         CvPoint rectInicio= cvPoint(blobPos.x,blobPos.y+2);
@@ -207,7 +197,6 @@ int main(int argc, char** argv)
         contador++;
 
     }
-
 
     //creo ventanas
     cvNamedWindow("test", 1);
