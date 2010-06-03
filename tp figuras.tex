@@ -122,7 +122,7 @@ Para la detecci\'on de las figuras, se realiza el siguiente procedimiento:
   					  \begin{equation} s_{3} = \frac { \#Vertices }
 				                      { K  }		\end{equation}
 
-					  $ K:  $	 \textit{M\'axima cantidad de v\'ertices del pol\'igono simplificado. }
+					  $ K:  $	 \textit{M\'axima cantidad de v\'ertices para un pol\'igono simplificado. }
                       
  					\end{itemize} 
 				\item   Una vez obtenidos los datos, estos son ingresados a la red neuronal
@@ -166,10 +166,13 @@ La Bibliotecas utilizadas para el desarrollo de la aplicaci\'on son las
 siguientes:
 \begin{itemize}
 	\item	OpenCV \cite{openCV,openCVBook} : Biblioteca open source para el procesamiento de im\'agenes.
+	Provee funcionalidad para manipular, transformar im\'agenes, y manejar ventanas de forma sencilla.
 	\item	CvBlobs \cite{cvBlob}: Utiliza OpenCV de base y agrega funcionalidad para
-	detectar blobs.
+	detectar blobs. Permite extraer informaci\'on de inter\'es sobre los mismos, como pol\'igonos que los 
+	defienen, \'area y centroide entre otros.
 	\item	FANN \cite{fann}: Fast Artificial Neural Network, es una biblioteca open source
-	que implementa una red neuronal.
+	que implementa redes neuronales, entre ellas la de tipo feed-forward y permite realizar el entrenamiento      	de la misma almacenando los resultados y la configuraci\'on en un archivo para su posterior
+	utilizaci\'on.
 \end{itemize}
        
 
