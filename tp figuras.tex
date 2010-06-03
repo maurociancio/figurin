@@ -64,12 +64,11 @@ El problema principal que se intenta resolver es reconocer que tipo de figura se
 
 \subsection{Resoluci\'on}
 Se encar\'o el problema dividi\'endolo en dos m\'odulos.
-%habrìa que tirar unos items aca, ahora veo como se haría
 \begin{itemize}
 \item 
-M\'odulo de representaci\'on: obtiene, a partir de la imagen provista, una representaci\'on conveniente para su utilizaci\'on por el segundo m\'odulo. La tarea que realiza es el an\'alisis de la imagen de entrada en busca de BLOBS \cite{blobs} que luego son representados por medio de pol\'igonos de los cuales se extrae informaci\'on caracter\'istica de inter\'es que ser\'a luego alimentada al m\'odulo de la siguiente etapa.
+M\'odulo de representaci\'on \cite{rulot}: obtiene, a partir de la imagen provista, una representaci\'on conveniente para su utilizaci\'on por el segundo m\'odulo. La tarea que realiza es el an\'alisis de la imagen de entrada en busca de BLOBS \cite{blobs} que luego son representados por medio de pol\'igonos de los cuales se extrae informaci\'on caracter\'istica de inter\'es que ser\'a luego alimentada al m\'odulo de la siguiente etapa.
 \item
-M\'odulo de interpretaci\'on: proporciona a partir del conjunto de formas u objetos presentes en la imagen y la representaci\'on convenientemente proporcionada por el m\'odulo de representaci\'on, la forma a la que pertenece el objeto, distinguiendo entre 3 posibles casos: cuadrado, tri\'angulo o c\'irculo.
+M\'odulo de interpretaci\'on \cite{rulot}: proporciona a partir del conjunto de formas u objetos presentes en la imagen y la representaci\'on convenientemente proporcionada por el m\'odulo de representaci\'on, la forma a la que pertenece el objeto, distinguiendo entre 3 posibles casos: cuadrado, tri\'angulo o c\'irculo.
 \end{itemize}
 
 
@@ -132,10 +131,7 @@ Para la detecci\'on de las figuras, se realiza el siguiente procedimiento:
 
             \end{enumerate}      
 
-Se utiliz\'o una red neuronal del tipo feed-forward entrenada con back-propagation. La implementaci\'on 
-utilizada es la que brinda la biblioteca FANN[3]. La topolog\'ia consiste en una capa de entrada con 3
-neuronas, una capa oculta con 6 neuronas y una capa de salida con 3 neuronas. Estos valores fueron 
-definidos luego de realizar varias pruebas con diferentes topolog\'ias posibles y ver que se obten\'ia 
+Se utiliz\'o una red neuronal del tipo feed-forward entrenada con back-propagation \cite{martinez}. La implementaci\'on utilizada es la que brinda la biblioteca FANN[3]. La topolog\'ia consiste en una capa de entrada con 3 neuronas, una capa oculta con 6 neuronas y una capa de salida con 3 neuronas. Estos valores fueron  definidos luego de realizar varias pruebas con diferentes topolog\'ias posibles y ver que se obten\'ia 
 un buen grado de generalizaci\'on con un n\'umero reducido de neuronas. La funci\'on de activaci\'on 
 elegida fue una sigmoidal.
 
