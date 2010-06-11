@@ -10,7 +10,7 @@
 \pretolerance=2000
 \tolerance=3000
 
-\title{\textbf{Algoritmos Gen\'etico para la formaci\'on de un equipo}\\
+\title{\textbf{Algoritmo gen\'etico para la formaci\'on de un equipo}\\
 \begin{normalsize}75.70 - Facultad de Ingenier\'ia de la Universidad de Buenos Aires\end{normalsize} }
 
 %\author{ \textbf{Facultad de Ingenier\'ia de la Universidad de Buenos Aires}\\
@@ -43,9 +43,7 @@
 \maketitle
 
 \begin{abstract}
-	Desarrollo de una aplicaci\'on de reconocimiento de figuras a partir del uso y entrenamiento de redes neuronales. Involucra un an\'alisis previo de las figuras cuyo objetivo es extraer de las mimas datos que permitan representarlas adecuadamente para luego reconocerlas por medio una red neuronal.
-	
-	Se entrena la red neuronal con figuras conocidas. Luego cuando la red est\'a en producci\'on las salidas obtenidas al introducir los datos preprocesados indican el tipo de figura que se reconoci\'o.
+	Desarrollo de una aplicaci\'on que utilice un algoritmo gen\'etico para formar un equipo para el Gran DT \cite{grandt} bas\'andose en la informaci\'on disponible de los distintos jugadores. Involucra la definici\'on de una funci\'on de aptitud para los jugadores y el uso de bibliotecas que permitan utilizar un algoritmo gen\'etico para obtener uno de los mejores equipos posibles. 
 \end{abstract}
 
 \thispagestyle{empty}
@@ -54,20 +52,18 @@
 %\newpage
 
 \section{Introducci\'on}
-El presente trabajo utiliza redes neuronales para la detecci\'on de figuras geom\'etricas. 
-La aplicaci\'on desarrollada toma una imagen que contiene figuras (cuadrados, tri\'angulos y c\'irculos), y procesa la misma para lograr la normalizaci\'on de los datos con la finalidad de obtener entradas para la red neuronal. 
-Una vez procesados los datos de entrada que representan a las figuras de la imagen, la red detecta el tipo de figura.
+El presente trabajo utiliza un algoritmo gen\'etico para la formaci\'on de un equipo de f\'utbol para el GranDT. La aplicaci\'on desarrollada toma los datos hist\'oricos de los jugadores y en base a ellos calcula la funci\'on de aptitud de cada uno. Luego de esto, se corren varias iteraciones del agoritmo gen\'etico aplicando los operadores de selecci\'on, cruza y mutaci\'on para lograr llegar a una poblaci\'on que contenga a los mejores equipos posibles.
 
 
 \section{Desarrollo}
-El presente trabajo se encuentra organizado en las siguientes secciones:
-\textit{Estado del arte} nos da una idea de las t\'ecnicas actuales utilizadas en aplicaciones similares en el ámbito de detecci\'on de figuras. 
+El documento se encuentra organizado en las siguientes secciones:
+\textit{Estado del arte} nos da una idea de las t\'ecnicas actuales utilizadas en aplicaciones similares en el ámbito de algoritmos gen\'eticos. 
 \textit{Presentaci\'on del Problema} presenta el dilema a resolver.
 \textit{Resoluci\'on} muestra la definici\'on de la soluci\'on planteada para resolver el problema anterior. 
 \textit{Resultados} muestra luego de aplicar la soluci\'on a un conjunto de entradas que representa al espectro de entradas posibles, las diferentes salidas de la aplicaci\'on desarrollada.
 Finalmente la secci\'on \textit{Conclusiones} muestra el resultado del an\'alisis del funcionamiento de la aplicaci\'on.
 
-\subsection{Estado del arte \cite{campilho}}
+\subsection{Estado del arte}
 El algoritmo genético es una técnica de búsqueda basada en la teoría de la evolución de Darwin, que ha cobrado tremenda popularidad alrededor del mundo durante los últimos años.
 La aplicación más común de los algoritmos genéticos ha sido la solución de problemas de optimización, en donde han mostrado ser muy eficientes y confiables. Los algoritmos genéticos son de probada eficacia en caso de querer calcular funciones no derivables (o de derivación muy compleja) aunque su uso es posible con cualquier función.
 Durante los últimos años una gran parte de la investigación en esta área se ha concentrado en el desarrollo de mejoras al desempeño de los algoritmos genéticos. Se han propuesto nuevas técnicas de representación, selección y cruza, con resultados muy alentadores. 
@@ -75,116 +71,66 @@ Durante los últimos años una gran parte de la investigación en esta área se 
 %[FUMARse gugle e ieee]
 
 \subsection{Presentaci\'on del Problema}
-El problema principal que se intenta resolver es reconocer que tipo de figura se encuentra presente en una imagen digital mediante el uso de una red neuronal. Deben poder identificarse correctamente cuadrados, tri\'angulos y c\'irculos. De este problema deriva uno secundario que consiste en procesar adecuadamente la imagen para obtener datos normalizados que sean apropiados para utilizar en la red neuronal. Adem\'as, se deber\'a realizar un entrenamiento de la misma, ajust\'andola de manera que los resultados obtenidos demuestren que se logra la generalizaci\'on de los casos presentados. Se intentar\'a lograr el reconocimiento tanto de figuras que est\'en claramente definidas como tambi\'en de casos en los cuales haya deformaciones o se pueda dar lugar a confusi\'on.
 
+El problema principal que se intenta resolver es el de determinar los jugadores pertenecientes al equipo ideal para el juego del Gran DT. Uno de los mayores retos para el desarrollo de la aplicaci\'on es la de definir la forma en la que se calcular\'a la funci\'on de aptitud en base a los datos de cada jugador. Adem\'as se deber\'a integrar el c\'odigo con las bibliotecas existentes para la utilizaci\'on de algoritmos gen\'eticos y habr\'a que definir la cantidad de iteraciones o tiempo que el algoritmo realizar\'a para tener una poblaci\'on de individuos que representen un buen resultado (es decir, un buen equipo).
 
-\subsection{Resoluci\'on}
-Se encar\'o el problema dividi\'endolo en dos m\'odulos.
+El equipo que se fomrar\'a deber\'a cumplir con las siguientes restricciones:
+
 \begin{itemize}
-\item 
-M\'odulo de representaci\'on \cite{rulot}: obtiene, a partir de la imagen provista, una representaci\'on conveniente para su utilizaci\'on por el segundo m\'odulo. La tarea que realiza es el an\'alisis de la imagen de entrada en busca de blobs \cite{blobs} que luego son representados por medio de pol\'igonos de los cuales se extrae informaci\'on caracter\'istica de inter\'es que ser\'a luego alimentada al m\'odulo de la siguiente etapa.
-\item
-M\'odulo de interpretaci\'on \cite{rulot}: proporciona a partir del conjunto de formas u objetos presentes en la imagen y la representaci\'on convenientemente proporcionada por el m\'odulo de representaci\'on, la forma a la que pertenece el objeto, distinguiendo entre 3 posibles casos: cuadrado, tri\'angulo o c\'irculo.
+\item Cantidad de jugadores: todo equipo debe tener 11 jugadores.
+\item Costo total: la sumatoria del valor de cada jugador del equipo no puede superar los \$60000000.
+\item Clubes: no pueden incluirse en el equipo m\'as de tres jugadores que pertenezcan a un mismo club.
+\item Posici\'on de jugadores: debe haber un arquero, cuatro defensores, cuatro mediocampistas y dos delanteros.
+\item Jugadores repetidos: cada jugador s\'olo puede ser incluido una sola vez.
+
 \end{itemize}
 
 
+\subsection{Resoluci\'on}
 
-Los pasos realizados por estos m\'odulos se explican a continuaci\'on:
+Para comenzar se recolectaron datos correspondientes a los jugadores y a su desempe\~no durante el campeonato Apertura 2009. Dentro de los datos que se disponene de los jugadores, podemos encontrar \textit{Nombre y Apellido}, \textit{Club}, \textit{Valor del pase}, \textit{Posici\'on} y \textit{puntaje para la fecha n} para las 19 fechas del campeonato. Con estos datos se intentar\'a formar el mejor equipo posible para una determinada fecha, en funci\'on de la informaci\'on disponible en el momento de ejecutar el algortimo.
 
-\subsubsection{Pasos}
-Para la detecci\'on de las figuras, se realiza el siguiente procedimiento:
-			\begin{enumerate}
-			  	\item	Se carga en memoria una imagen del archivo que se pasa como 1er
-			  	argumento por l\'inea de comando. La aplicaci\'on soporta los formatos m\'as
-			  	comunes (png, jpg, bmp, gif).
-				\item	Se convierte la imagen a una escala de grises.
-				\item 	A partir de la imagen transformada a escala de grises, se hace una
-				detecci\'on de los blobs. En este paso se le especifica un umbral para el
-				proceso de detecci\'on.
-				\item	Se filtran los blobs detectados segun el \'area de la figura.
-				\item	Con los blobs resultantes se obtienen los datos que se introducir\'an
-				en la red neuronal ($ s_{1}, s_{2}, s_{3} $). Estos datos se denominan \textit{discriminantes basados en caracter\'isticas geom\'etricas} \cite{yangGillies} , y se obtienen a partir de 				           		caracter\'isticas de los blobs:
-					\begin{itemize}
-                      \item	Distancias promedio al punto central de los v\'ertices
-                      del pol\'igono que definen al blob. Se normalizan
-                      dividiendo esta distancia por la distancia al v\'ertice m\'as
-                      alejado.
-                      
-  					  \begin{equation} s_{1} = \frac { \sum_{i=1}^{n} { {|\vec {x}_{i} - \vec{x}_{c}|^{2}} } }
-				      { \max ( {|\vec{x}_{1} - x_{c}|^{2}}, ... , {|\vec{x}_{n} - \vec{x}_{c}|^{2}} ) }		\end{equation}
+A continuaci\'on se especifican los par\'ametros utilizados para el algotimo gen\'etico utilizado:
 
-					  $ \vec{x}_{i}:  $	 \textit{i-\'esimo punto del pol\'igono. }
-					  
-					  $ \vec{x}_{c}:  $	 \textit{centroide del pol\'igono. }
-						
-                      \item	\'Area del pol\'igono que define el blob dividido el 
-                      \'area del rect\'angulo de \'area m\'inima que contiene a ese blob.
-                      
-  					  \begin{equation} s_{2} = \frac { Area Blob }
-				                      { Area R_{m}}		\end{equation}
+\subsubsection{Cromosoma}
 
-					  $ R{m}:  $	 \textit{ Rect\'angulo de \'area m\'inima que contiene al Blob. }
+Las posibles soluciones o individos a encontrar tendr\'an una estructura o cromosoma con 11 genes en el que cada gen representa un posible jugador.
 
-                      \item N\'umero de v\'ertices del pol\'igono simplificado que
-                      define al blob. Cuando se detecta un blob, se le pide a la
-                      biblioteca utilizada un pol\'igono que define a ese blob
-                      (una lista de puntos x,y). El problema que surge es que
-                      esa lista contiene muchos puntos que pueden ser considerados redundantes,
-                      por lo que se aplica un algoritmo \cite{ramerDouglas} para la
-                      reducci\'on de los mismos que elimina los puntos que no son
-                      necesarios sin deformar al pol\'igono.
-                      
-  					  \begin{equation} s_{3} = \frac { \#Vertices }
-				                      { K  }		\end{equation}
+\subsubsection{Funci\'on de aptitud}
 
-					  $ K:  $	 \textit{M\'axima cantidad de v\'ertices para un pol\'igono simplificado. }
-                      
- 					\end{itemize} 
-				\item   Una vez obtenidos los datos, estos son ingresados a la red neuronal
-				que posee 3 neuronas de salida.
-				\item La neurona que produzca el mayor valor a la salida de la red neuronal corresponde
-				al tipo de figura ingresada.
+La funci\'on de aptitud a utilizar para el operador de selecci\'on se dise\~no de forma tal de intentar excluir aquellos individuos que no se ajustan a las restricciones vigentes del problema.
 
-            \end{enumerate}      
+La funci\'on calcular\'a el puntaje o aptitud de una soluci\'on sumando o restando puntos seg\'un se den las siguientes condiciones:
 
-Se utiliz\'o una red neuronal del tipo feed-forward entrenada con back-propagation \cite{martinez}. La implementaci\'on utilizada es la que brinda la biblioteca FANN[3]. La topolog\'ia consiste en una capa de entrada con 3 neuronas, una capa oculta con 6 neuronas y una capa de salida con 3 neuronas. Estos valores fueron  definidos luego de realizar varias pruebas con diferentes topolog\'ias posibles y ver que se obten\'ia 
-un buen grado de generalizaci\'on con un n\'umero reducido de neuronas. La funci\'on de activaci\'on 
-elegida fue una sigmoidal.
+\begin{itemize}
+\item Se sumar\'a una cantidad de puntos por cada jugador del equipo igual al promedio de puntos por partido.
+\item Si costo del equipo es menor al m\'aximo estipulado, se sumar\'a una cantidad de puntos igual a la diferencia que hay hasta el m\'aximo costo posible.
+\item En caso de que no se cumpla alguna de las restricciones del problema, la aptitud de la soluci\'on ser\'a 0.
+\end{itemize}
 
-El entrenamiento se realiza ajustando continuamente los pesos de manera que 
-la salida de la red  concuerde con la salida especificada en el archivo de entrenamiento. Para 
-determinar en que nivel la red se ajusta a los resultados deseados, se utiliza el cuadrado de la media 
-del error, es decir, el promedio del cuadrado de la diferencia entre la salida actual y la buscada para
-cada uno de los casos de entrenamiento. El ciclo se detiene cuando este valor es menor al especificado
-al crear la red. Dicho par\'ametro fue probado con valores de 0.01 y 0.001, resultando este \'ultimo el 
-elegido por arrojar los mejores resultados.
+\subsubsection{Selecci\'on}
+Se eligi\'o una selecci\'on del tipo elitista para evitar perder las mejores soluciones dado que hay un gran numero de casos en los cuales las soluci\'ones no cumplen con las restricciones del problema. Se intent\'o de esta forma reducir el espacio de b\'usqueda entre las soluciones que las satisfacen.
 
-Para el entrenamiento de la red se utilizaron 15 casos provenientes de una imagen con 15 figuras especialmente seleccionadas para intentar cubrir un buen espectro de posibles casos.
-   
-             \begin{figure}[H]
-	                  \begin{center}
-%	                    \includegraphics[width=5cm]{prueba2.png}
-	                    \caption{\label{entrenamiento} Figuras utilizadas para el entrenamiento. }
-	                  \end{center}
-	            \end{figure}
+\subsubsection{Cruza}
+Se seleccion\'o la cruza simple, eligiendo al azar uno de los m-1 posibles puntos de cruza del cromosoma para luego intercambiar los segmentos separados por ese punto. Se busc\'o con esta decisi\'on simplificar el proceso de evoluci\'on.
+
+\subsubsection{Mutaci\'on}
+Se seleccion\'o una mutaci\'on del tipo simple, es decir, se elige en forma aleatoria un gen, el cual se muta con cierta probabilidad habitualmente muy baja.
+
+\subsubsection{Tama\~no de la poblaci\'on}
+Se estableci\'o que la poblaci\'on sobre la cual se va a operar sea de 6 individuos.
+ 
+\subsubsection{N\'umero m\'aximo de iteraciones}
+Se limit\'o la cantidad de cilcos de evoluci\'on a 200.
 
 
-%\includegraphics{Screenshot.png}
-
-%incluir imagen de las figuras utilizadas para entrenar la red y quizas una tabla con los valores obtenidos
-
-\subsubsection{Bibliotecas}
+\subsection{Bibliotecas}
 La Bibliotecas utilizadas para el desarrollo de la aplicaci\'on son las
 siguientes:
 \begin{itemize}
-	\item	OpenCV \cite{openCV,openCVBook} : Biblioteca open source para el procesamiento de im\'agenes.
-	Provee funcionalidad para manipular, transformar im\'agenes, y manejar ventanas de forma sencilla.
-	\item	CvBlobs \cite{cvBlob}: Utiliza OpenCV de base y agrega funcionalidad para
-	detectar blobs. Permite extraer informaci\'on de inter\'es sobre los mismos, como pol\'igonos que los 
-	defienen, \'area y centroide entre otros.
-	\item	FANN \cite{fann}: Fast Artificial Neural Network, es una biblioteca open source
-	que implementa redes neuronales, entre ellas la de tipo feed-forward y permite realizar el entrenamiento      	de la misma almacenando los resultados y la configuraci\'on en un archivo para su posterior
-	utilizaci\'on.
+
+\item JGAP : es un componente de algoritmos gen\'eticos y programaci\'on gen\'etica provisto como un framework de Java. Provee mecanismos gen\'eticos basicos que pueden ser usados f\'acilmente para aplicar principios evolutivos a soluciones de un problema.
+
 \end{itemize}
        
 
@@ -264,13 +210,13 @@ Al presente sistema se le podrían realizar las siguientes mejoras:
 
 \begin{itemize}
 
-\item  Utilización de operadores dinámicos, esto implica que los operadores se modifiquen durante
-la ejecución del proceso, por ejemplo, el operador de mutación podría incrementar o reducir
+\item  Utilizaci\'on de operadores din\'amicos, esto implica que los operadores se modifiquen durante
+la ejecuci\'on del proceso, por ejemplo, el operador de mutaci\'on podr\'ia incrementar o reducir
 su porcentaje de incidencia en función al resultado que se va obteniendo durante la corrida
 del sistema.
-\item Modificación de la función de aptitud para incluir m\'as restricciones, el sistema podría tener otros componentes y funcionar en base a otras variables. 
-\item Modificar el operador de selección.
-\item Expandir la utilización del sistema a otras áreas.
+\item Modificaci\'on de la funci\'on de aptitud para incluir m\'as restricciones, el sistema podr\'ia tener otros componentes y funcionar en base a otras variables. 
+\item Modificar el operador de selecci\'on para orientar la b\'usqueda m\'as r\'apidamente a las soluciones que mejor se adec\'uan a las reglas del problema.
+\item Experimentar con otro tipo de cruza para determinar si es posible encontrar una soluci\'on buena en menor tiempo.
 
 \end{itemize}
 \newpage
@@ -281,7 +227,7 @@ del sistema.
  García Mart\'inez,
  \emph{Algoritmos Gen\'eticos}.
  Centro de Ingenier\'ia del Software e Ingenier\'ia del Conocimiento
- Instituto Tecnol\'ogico Buenos Aires.
+ Instituto Tecnológico Buenos Aires. 
 
 \bibitem{Cantu-Paz}
  Cant\'u-Paz,
@@ -320,6 +266,13 @@ Annals of Mathematics and Artificial Intelligence Joumal,
  \emph{Crossover or Mutation}.
  Proceedings of the Foundations of Genetic Algoritluns Workshop Vail, Colorado, pag. 221- 237,
  Julio 1992
+ 
+ \bibitem{jgap}
+ JGAP, 
+ \emph{Genetic Algorithms and Genetic Programming package}
+ Release: 3.4.4,
+ Octubre 2009
+ 
 
 \bibitem{Holland}
  Holland,
@@ -330,6 +283,11 @@ Annals of Mathematics and Artificial Intelligence Joumal,
  Miller,Goldberg, 
  \emph{Genetic Algoriduns, Toumwnent Selection, and the Effects of Noise}.
  IlliGAL Report No. 95006, University of Illinois, 1995
+ 
+\bibitem{grandt}
+ El Gran DT, 
+ \emph{http://www.grandt.com.ar/}.
+ Copyright © 2008 Clarín.
   
 
   
