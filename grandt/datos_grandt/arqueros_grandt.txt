@@ -1,0 +1,68 @@
+Carrera, Juan Ignacio |Argentinos Jr|1900000,00000000|Arquero||||||||||||||||
+Quirós, Diego Julián |Argentinos Jr|300000,000000000|Arquero||||||||||||||||
+Morales, Diego Hernán |Argentinos Jr|800000,000000000|Arquero||||||||||||||||
+Torrico, Sebastián A. |Argentinos Jr|4800000,00000000|Arquero||5|1|4|5|6|5|2|8|4|2|3|8|3|11|1
+Cuenca, Mario Eduardo |Arsenal|3900000,00000000|Arquero||||||||||||||||
+Campestrini, Cristian D. |Arsenal|4800000,00000000|Arquero||3|0|1|5|5|9|4|1|8|9|5|10|6|2|4
+Orcellet, Catriel Iván |Arsenal|1500000,00000000|Arquero||||||||||||||||
+Alasia, Matías Ricardo |Arsenal|300000,000000000|Arquero||||||||||||||||
+Lucchetti, Cristian David |Banfield|7100000,00000000|Arquero||4|2|20|4|8|5|6|3|4|6|8|2|8|4|1
+López, Sebastián Alberto |Banfield|300000,000000000|Arquero||||||||||||||||
+Bologna, Enrique Alberto |Banfield|1800000,00000000|Arquero||||||||||||||||
+Ayala, Josué Daniel |Boca|1300000,00000000|Arquero||||||||||||||||
+Abbondanzieri, Roberto |Boca|7500000,00000000|Arquero||3|8|8|4|3|4|2|2|3|4|3|8|1|2|4
+García, Javier Hernán |Boca|1700000,00000000|Arquero||||||||||||||||
+Díaz, Marcos Guillermo |colon|300000,000000000|Arquero||||||||||||||||
+Gorosito, Iván |colon|300000,000000000|Arquero||||||||||||||||
+Pozo, Diego Raúl |colon|4100000,00000000|Arquero||8|3|8|9|14|9|1|4|9|5|8|9|8|5|2
+Silva, Agustín |Estudiantes|300000,000000000|Arquero||||||||||||||||
+Dobler, Mauro Javier |Estudiantes|300000,000000000|Arquero||||||||||||||||
+Albil, Damián Gonzalo |Estudiantes|2000000,00000000|Arquero|||||||7|||||||8|4|10
+Andújar, Mariano G. |Estudiantes|7000000,00000000|Arquero||6|4|7|11|14|8|8|14|5|4|5|4|||
+Cavallotti, Maximiliano |Gimnasia J|400000,000000000|Arquero||||||||||||||||
+Fernández, Nereo Ariel |Gimnasia J|2700000,00000000|Arquero|||||||||4|||||||0
+Pezzuti, Gastón F. |Gimnasia J|4100000,00000000|Arquero||3|5|9|4|4|7|-1||10|1|8|4|7|3|
+Bonnin, Yair Iván |Gimnasia LP|300000,000000000|Arquero||||||||||||||||
+Monetti, Fernando |Gimnasia LP|300000,000000000|Arquero||||||||||||||||
+Bangardino, Pablo M. |Gimnasia LP|1300000,00000000|Arquero|||3|||||||||||||
+Sessa, Gastón Alejandro |Gimnasia LP|6000000,00000000|Arquero||2||4|5|3|4|3|4|8|4|8|13|3|4|9
+Carranza, Jorge Carlos |Godoy Cruz|1000000,00000000|Arquero||||||||||||||||
+Ibáñez, Nelson Martín |Godoy Cruz|3700000,00000000|Arquero||5|6|2|5|2|6|5|3|8|4|3|2|6|8|9
+Aracena, Cristian R. |Godoy Cruz|300000,000000000|Arquero||||||||||||||||
+Calviño, Lucas |Huracan|400000,000000000|Arquero||||||||||||||||
+Monzón, Gastón Ezequiel |Huracan|2500000,00000000|Arquero||4|1|8|5|4|5|8|4|5|9|5|5|8|8|8
+González Giraldo, David |Huracan|1000000,00000000|Arquero||||||||||||||||
+Navarro, Hilario B. |Independiente|3500000,00000000|Arquero|||5||6|5|1|4|10|4|8|2|1|5|9|8
+Assmann, Walter Fabián |Independiente|6500000,00000000|Arquero||9|2|5|-1|6|6|4|6|3|-2|2|6|-3|5|6
+Gabbarini, Adrián José |Independiente|600000,000000000|Arquero||||||||||||||||
+Moyano, Fabián Gustavo |lanus|300000,000000000|Arquero||||||||||||||||
+Marchesín, Agustín F. |lanus|300000,000000000|Arquero||||||||||||||||
+Bossio, Carlos Gustavo |lanus|5000000,00000000|Arquero||7|2|2|5|6|4|16|1|4|5|8|4|0|4|4
+Peratta, Sebastián Darío |Newels|3900000,00000000|Arquero||1|5|0|5|4|4||6|5|4|8|5|4|4|
+Hoyos, Lucas Adrián |Newels|300000,000000000|Arquero||||||||||||||||
+Caffa, Germán Martín |Newels|2800000,00000000|Arquero||||||||2||||||||3
+Martínez Gullotta, José L. |Racing|3600000,00000000|Arquero||||||||||||||||
+Campagnuolo, Gustavo |Racing|5000000,00000000|Arquero||||||||||||||||
+Migliore, Pablo A. |Racing|3600000,00000000|Arquero||0|6|7|15|6|14|6|5|3|2|7|8|10|7|4
+Barbosa, Mariano D. |River|4000000,00000000|Arquero||7|5|3|5|||||||||||
+Marinelli, Gonzalo |River|300000,000000000|Arquero||||||||||||||||
+Chichizola, Leandro |River|300000,000000000|Arquero||||||||||||||||
+Vega, Mario Daniel |River|4000000,00000000|Arquero||||||10|5|8|5|4|1|13|13|5|5|2
+Ojeda, Juan Marcelo |River|5500000,00000000|Arquero||||||||||||||||
+Broun, Jorge Emanuel |Rosario Central|4500000,00000000|Arquero||2|9|6|13|3|4|8|8|10|5|6|0|11|6|4
+Galíndez, Hernán Ismael |Rosario Central|1100000,00000000|Arquero||||||||||||||||
+Lupardo, Facundo |Rosario Central|300000,000000000|Arquero||||||||||||||||
+Gómez Zarco, Pablo |San Lorenzo|300000,000000000|Arquero||||||||||||||||
+Centeno, Bruno Emiliano |San Lorenzo|400000,000000000|Arquero||2||||||||||||||
+Champagne, Nereo |San Lorenzo|1800000,00000000|Arquero||||||||||||||||
+Orion, Agustín Ignacio |San Lorenzo|6600000,00000000|Arquero||||||||||||||||
+Lencina, Pablo |SM Tucuman|300000,000000000|Arquero||||||||||||||||
+Leyenda, Bernardo A. |SM Tucuman|1500000,00000000|Arquero||||||||||||||||
+Gutiérrez, Marcos Juan |SM Tucuman|4500000,00000000|Arquero||4|8|5|4|8|8|4|10|4|5|4|2|4|8|2
+Salvatore, Esteban G. |SM Tucuman|300000,000000000|Arquero||||||||||||||||
+Ardente, Luis Emanuel |Tigre|1300000,00000000|Arquero||||||||||||||||
+Islas, Daniel Alejandro |Tigre|6000000,00000000|Arquero||3|14|9|6|5|4|5|0|2|5|15|10|2|16|8
+Abud, Lucas Emanuel |Tigre|300000,000000000|Arquero||||||||||||||||
+Barovero, Marcelo A. |Velez|3800000,00000000|Arquero||||||||||||||||
+Cacace, Ezequiel Damián |Velez|600000,000000000|Arquero||||||||||||||||
+Montoya, Germán |Velez|5800000,00000000|Arquero||9|6|5|5|8|9|3|8|3|2|8|9|8|5|8

@@ -1,0 +1,199 @@
+Balbuena, Pedro Dionicio |Argentinos Jr|300000,000000000|Defensor||||||||||||||||
+Berardo, Nicolás |Argentinos Jr|300000,000000000|Defensor|||||||||||||6||2|
+Canuto, Ignacio |Argentinos Jr|1700000,00000000|Defensor|||||12|13|4|6|13|5|12|6|6|5|5|3
+Caruzzo, Matías Nicolás |Argentinos Jr|4200000,00000000|Defensor||5|4|3|6|7|5|7||5|4|4||3||3
+Ojeda, Juan |Argentinos Jr|300000,000000000|Defensor||3||||||||||||||
+Prósperi, Gonzalo S. |Argentinos Jr|2000000,00000000|Defensor||5|4|5|4|6|4|||||4|6|5|3|3
+Sabia, Juan Alberto |Argentinos Jr|3000000,00000000|Defensor|||2||5|11|2|6|7|4|1|5||4|2|
+Scotti, Andrés |Argentinos Jr|4700000,00000000|Defensor||3|4|4|||||7||4|3|4|2|6|3
+Espínola, Liduvino Darío |Arsenal|2600000,00000000|Defensor|||5|3||3|5|4|10|4||6||||
+Matellán, Aníbal Samuel |Arsenal|4800000,00000000|Defensor||1|3|2|5|5|2|4|2|7|5|5|5|7|3|5
+Brau, Mariano Sebastián |Arsenal|2000000,00000000|Defensor|||||||5|4|||2||3|6||
+Cuesta, Leandro Víctor |Arsenal|300000,000000000|Defensor||||||||||||||||
+Díaz, Cristian Lionel |Arsenal|4100000,00000000|Defensor||3|5|||||||5||||||
+Mosquera, Jossimar |Arsenal|3900000,00000000|Defensor||3||||||||7|3|||6|1|
+Nervo, Hugo Martín |Arsenal|300000,000000000|Defensor|||||3|5|5|5|1||||||4|3
+Pérez, Damián Alfredo |Arsenal|500000,000000000|Defensor||||||||||||||||
+Uglessich, Mariano E. |Arsenal|4300000,00000000|Defensor|||3|5|||||2|||4||7||
+Martínez, Francisco D. |Arsenal|300000,000000000|Defensor||||||||||||||||
+Barraza, Julio Eduardo |Banfield|2000000,00000000|Defensor|||||5|4|2||||||5|13|12|4
+Broggi, Ariel Esteban |Banfield|2300000,00000000|Defensor|||4|4||4||||||||||
+Bustamante, Marcelo H. |Banfield|3400000,00000000|Defensor||5|4||5|5|2|5|6|3|6|5|5|5|3|0
+Devaca, José Ricardo |Banfield|3200000,00000000|Defensor||5|-1|||||4|0|4|6|5|0|||3
+Dos Santos, Mauro |Banfield|500000,000000000|Defensor|||4|6||||||||||||
+Vergara, Pablo Nicolás |Banfield|600000,000000000|Defensor||||||||||||||||
+Toledo, Gustavo |Banfield|300000,000000000|Defensor||||||||||||||||
+Oviedo, Gonzalo |Banfield|300000,000000000|Defensor||||||||||||||||
+Nasuti, Cristian Javier |Banfield|4000000,00000000|Defensor||2||6|5|7|3|7|5|6|6|5|4|7|7|
+López, Víctor Rubén |Banfield|4900000,00000000|Defensor||4|4|7|5|7|6|5|11|7|6|5|5|14|3|5
+Galarza, Marcos Adrián |Banfield|1900000,00000000|Defensor||||||||||||||||
+Barroso, Julio Alberto |Boca|1400000,00000000|Defensor||||||4|||4||||6||5|
+Cáceres, Julio César |Boca|6300000,00000000|Defensor||6|8||||6|||||5|7|5|2|
+Calvo, José María |Boca|3000000,00000000|Defensor||||||||||||||||
+Fondacaro, Carlos Rubén |Boca|1000000,00000000|Defensor||||||||||||||||1
+Forlín, Juan Daniel |Boca|3000000,00000000|Defensor||3|19|8|6||11||5|5|5|1||2|3|4
+Sauro, Gastón |Boca|400000,000000000|Defensor||||||||5||||5|6|||6
+Ibarra, Hugo Benjamín |Boca|6800000,00000000|Defensor||5|8|7|7||3|3||3||||3|4|3
+Roncaglia, Facundo S. |Boca|3600000,00000000|Defensor||||8|3|||5|12|12|5|5|||1|
+Paletta, Gabriel A. |Boca|5700000,00000000|Defensor|||||||||||6|||||
+Muñoz, Ezequiel Matías |Boca|1000000,00000000|Defensor||||||6||2||||||||
+Morel Rodríguez, Claudio |Boca|7900000,00000000|Defensor||5|8||||6|||6||6||||
+Krupoviesa, Juan Angel |Boca|3800000,00000000|Defensor|||7|7|5|5||3|5||4|4|5|4|1|
+Candia, Salustiano A. |colon|2500000,00000000|Defensor||7|4|5|7|5||||6|||5|7||
+Aguilar Benítez, Pablo C. |colon|3600000,00000000|Defensor||||||||||||||7||
+Chitzoff, Diego Martín |colon|3800000,00000000|Defensor|||||||6||||||5|4|5|4
+Ferrero, Alexis Xavier |colon|3700000,00000000|Defensor||11|5|7|5|4|7|6|5|6|6|7|4||6|5
+Garcé, Ariel Hernán |colon|3900000,00000000|Defensor|||||||7|5|5|6|6|6||12|5|3
+Rivarola, Germán E. |colon|4400000,00000000|Defensor||4|10|7|5|5|6|4|||4|6|11|6|13|9
+Goux, Marcelo Jesús |colon|4100000,00000000|Defensor||14|5|7|4|5|4|5|4|7|3|6|4||3|3
+Quilez, Ismael Alberto |colon|500000,000000000|Defensor||||||||||||||||
+Merlo, Omar Jesús |colon|2000000,00000000|Defensor||||||||||||||||
+Mansilla, Mauricio Oscar |colon|1000000,00000000|Defensor||||||||||||||||
+Lazzaroni, Franco Martín |colon|300000,000000000|Defensor||||||||||||||||
+Alayes, Agustín |Estudiantes|6200000,00000000|Defensor|||6|||||||||||||
+Cellay, Christian Ariel |Estudiantes|4000000,00000000|Defensor||6|5|4|6|7|7|6|7|13|6|6||7||
+Angeleri, Marcos Alberto |Estudiantes|6800000,00000000|Defensor|||5|6|2|6|7|6|6|7||5|7|||
+Desábato, Leandro |Estudiantes|4900000,00000000|Defensor||3||5|6|6|6|7|7|||4|5|6||
+Díaz, Juan Manuel |Estudiantes|1900000,00000000|Defensor||||5||||||5|||5|4||
+Iberbia, Raúl Alejandro |Estudiantes|900000,000000000|Defensor|||5||4|6||6|13|5|7||||4|5
+Ré, Germán David |Estudiantes|5700000,00000000|Defensor||4||||6|4|6|6||5|5|5|7||
+Rojo, Faustino Marcos |Estudiantes|400000,000000000|Defensor||||||||||5|6||3||2|12
+Sarulyte, Matías |Estudiantes|500000,000000000|Defensor|||||||||||||||4|3
+Sosa, Gerardo Matías |Estudiantes|300000,000000000|Defensor||||||||||||||||
+Fernández, Federico |Estudiantes|1800000,00000000|Defensor|||||||||14||13||7||5|6
+Desvaux, Héctor Martín |Gimnasia J|4800000,00000000|Defensor||9|6||6||6|5|5|4|4|6|5|5||5
+Cahais, Matías |Gimnasia J|3400000,00000000|Defensor||5|13|6|5|5|5|5|5|2|4|5|5||3|5
+Franco, Ariel Horacio |Gimnasia J|2600000,00000000|Defensor||||||||||||||||
+Ladino, Santiago Andrés |Gimnasia J|3000000,00000000|Defensor||2|5|6||3||5|||4|5|5|7|3|4
+Ramón, Gabriel Fernando |Gimnasia J|3000000,00000000|Defensor||||||||||||||||
+Rocco, Sebastián A. |Gimnasia J|3700000,00000000|Defensor|||||||||||5|6|6|7|3|
+Rodríguez, Raúl M. |Gimnasia J|300000,000000000|Defensor||||||||||||||||
+Cardozo, derlis|Argentinos Jr|1800000,00000000|Defensor||||5|5|6|4|5|5|5|3||7||5|3
+Loeschbor, Gabriel A. |Gimnasia J|4300000,00000000|Defensor||3||4|5|6|7||5|6||||7|4|2
+Albornoz, Raúl Alberto |Gimnasia LP|300000,000000000|Defensor||||||||||||||||
+San Esteban, Jorge H. |Gimnasia LP|2900000,00000000|Defensor||||||5||||||||||
+Agüero, Ariel Antonio |Gimnasia LP|4000000,00000000|Defensor||5|4|6|6|5|4|3|3|6|5|7|7|5|12|7
+Cardozo, Marcelo A. |Gimnasia LP|800000,000000000|Defensor||||5|2|5|0|5|4|7|4|5|-1||5|6
+Flores, Franco Daniel |Gimnasia LP|300000,000000000|Defensor||||||||||||||||
+Iriarte, Hugo Germán |Gimnasia LP|1900000,00000000|Defensor|||5|||||||||||2||
+Juárez, Miguel Angel |Gimnasia LP|300000,000000000|Defensor||||||||||||||||
+Landa, Lucas León |Gimnasia LP|2000000,00000000|Defensor||||||||||||||||
+Maldonado, Rubén Darío |Gimnasia LP|3700000,00000000|Defensor||0|6|4|3||4|5|11|6|5|6|5|4|4|6
+Quiroga, Federico |Gimnasia LP|300000,000000000|Defensor||||||||||||||||
+Masuero, Abel Luis |Gimnasia LP|800000,000000000|Defensor||||||||||||||||
+Ormeño, Alvaro Andrés |Gimnasia LP|3200000,00000000|Defensor||3|4||5|4|4|3|2|7|5|6|3|5|6|5
+Graff, Patricio Andrés |Gimnasia LP|3000000,00000000|Defensor||5|6|||||||||||||
+Piarrou, Cristian Daniel |Gimnasia LP|2000000,00000000|Defensor||||5||||||||||||
+Formica, Lautaro Roque |Godoy Cruz|2900000,00000000|Defensor||5|5|5|5|6|5|5|6|14|6|6||6|7|4
+Dutari, Francisco |Godoy Cruz|3100000,00000000|Defensor||3|5|2||||||7|5|5|5|6|7|7
+Franco, Guillermo Lucas |Godoy Cruz|1900000,00000000|Defensor||||||||||||||||
+Martínez, Sebastián A. |Godoy Cruz|900000,000000000|Defensor||4|5|5|12|6|4|4|4||||4|||
+Salomón, Darío A. |Godoy Cruz|2000000,00000000|Defensor||||||||||||||0||
+Santander, Pablo E. |Godoy Cruz|300000,000000000|Defensor||||||||||||||||
+Sigali, Leonardo Germán |Godoy Cruz|3100000,00000000|Defensor|||||6|5|5|5|3|8|4|4|5|5|7|4
+Vallés, Gabriel |Godoy Cruz|2000000,00000000|Defensor||5|5|5|5|5|3|5|5|8|6|5|||6|7
+Cuevas, Cristian Germán |Godoy Cruz|300000,000000000|Defensor||||||||||||||5||
+Llesona, Ezequiel |Huracan|300000,000000000|Defensor||||||||||||||||
+Arano, Carlos Andrés |Huracan|3500000,00000000|Defensor||6|1||5|5|11|7|6|5|7|4|7|6|8|5
+Araujo, Carlos Luciano |Huracan|2500000,00000000|Defensor||6|13|7|6|3|7|5||5|7|6|8|6|7|3
+Beraldi, Gastón Esteban |Huracan|900000,000000000|Defensor||||||||||||||||
+Domínguez, Eduardo R. |Huracan|3900000,00000000|Defensor||5|4|8|6|0||5|6|4||3|5|7|7|6
+Goltz, Paolo Duval |Huracan|4800000,00000000|Defensor||9|5|||5|6||12|||3|4|18|7|6
+Cura, Kevin Eric |Huracan|900000,000000000|Defensor||||5|||7||||8|||||
+Nadal, Iván Ezequiel |Huracan|1500000,00000000|Defensor||||||||||||||||
+Filipetto, Ezequiel N. |Huracan|500000,000000000|Defensor||||||||7|6|5|6|||||
+Molina, Cristian Gastón |Independiente|300000,000000000|Defensor||||||||||||||||
+Mareque, Lucas Armando |Independiente|3300000,00000000|Defensor||7|2|6|3|||||||||||
+Di Gregorio, Matías G. |Independiente|1100000,00000000|Defensor||||||||||||||||
+Caracoche, Juan F. |Independiente|1500000,00000000|Defensor||||||4|3||||2|||||
+Bocchino, Emanuel Raúl |Independiente|600000,000000000|Defensor||||||||||||||||
+Gioda, Leandro Andrés |Independiente|4100000,00000000|Defensor||||13|4|6|5|5|7|4|4|5|5|2|4|4
+Rodríguez, Guillermo D. |Independiente|4900000,00000000|Defensor||6|4|6|4|||5|5|3||1|6|2|2|
+Moreira, Ricardo Ariel |Independiente|3400000,00000000|Defensor|||3|5|4|5|6|||5|3|||||
+Puertas, Angel M. |Independiente|2800000,00000000|Defensor||5||||||||||||||
+Tuzzio, Eduardo Nicolás |Independiente|6000000,00000000|Defensor||7|4||||5|6|6|3||4|6|0|5|6
+Viola, Mariano Gabriel |Independiente|600000,000000000|Defensor||||||||3|6||3|||||
+Viera Castro, Jadson |lanus|3300000,00000000|Defensor||7|5|6|6|6|5|7||||5|6|3|6|5
+Arce, Carlos Darío |lanus|1000000,00000000|Defensor||||||||||6|6|||5||6
+Faccioli, Emir Saúl |lanus|3100000,00000000|Defensor||7|5|||||6|4|5|5|6|3|3|0|
+Graieb, Rodolfo Moisés |lanus|3100000,00000000|Defensor||6|3|3|5|||6|0|||6|3|4||
+Grana, Hernán Gustavo |lanus|2200000,00000000|Defensor||||||6|5||||||||5|5
+Hoyos, Santiago Abel |lanus|4000000,00000000|Defensor||||5|4||5||5|||||||5
+Macalik, Iván Ricardo |lanus|1000000,00000000|Defensor|||||||||||5|||||
+Velázquez, Maximiliano |lanus|3900000,00000000|Defensor||7|6|4|5|5|13|6|5|3||14|4|11|6|6
+Quintana, Carlos G. |lanus|2200000,00000000|Defensor||||||4||||3||||||
+Aguilar, Pablo Andrés |Newels|2900000,00000000|Defensor||||5|5|||||||||||6
+Fideleff, Ignacio David |Newels|2000000,00000000|Defensor||||||||||||||||
+Insaurralde, Juan Manuel |Newels|2700000,00000000|Defensor||5|5|3|6|6|5|3|5|5|6|8|5|3||3
+Pillud, Iván Alexis |Newels|2000000,00000000|Defensor||6|3|||4|5|4|7|5|4|7|4|3|4|
+Schiavi, Rolando Carlos |Newels|7000000,00000000|Defensor||7|3||6|6|4|4|5|6|4|5|6|5|5|
+Spolli, Nicolás Federico |Newels|5400000,00000000|Defensor||||0||3|3|5|7|6|5|7|6|3||
+Quiroga, Juan Leandro |Newels|3000000,00000000|Defensor||6|3|2|5|||||3|3|||2|4|
+Aciar, Alan Emanuel |Racing|300000,000000000|Defensor||||||||||||||||
+Aveldaño, Lucas Elio |Racing|1800000,00000000|Defensor||4|6|6|7|8|6|3|6|6|6|6|7|7|7|7
+Cáceres, Marcos Antonio |Racing|4100000,00000000|Defensor|||||||||||11|7|3|7|6|6
+García, Gonzalo S. |Racing|2600000,00000000|Defensor||||||||||||||||
+Lluy, Braian Emanuel |Racing|500000,000000000|Defensor|||||8||||7|7|4|6|6|8|6|6
+Mercado, Gabriel Iván |Racing|3000000,00000000|Defensor||4||||||5|7|||6||||7
+Peppino, Franco |Racing|3800000,00000000|Defensor||||||||||||||||
+Puchetta, Martín Ariel |Racing|300000,000000000|Defensor||||||||||||||||
+Shaffer, José Alberto |Racing|3700000,00000000|Defensor||4|6|6|4|7|6|5||||1||6||
+Sosa, Franco Sebastián |Racing|4800000,00000000|Defensor||9|7|6||11|6|5|6|1||3|5|6|12|4
+Martínez, Matías Alfredo |Racing|800000,000000000|Defensor||4|6|3|7|6|6|13|14|6|1||6||7|13
+Cabral, Gustavo Daniel |River|5100000,00000000|Defensor||5|6|12|3|3|5|6|4|5||6||||
+Coronel, Maximiliano |River|300000,000000000|Defensor||||||||||||||||
+Ferrari, Paulo Andrés |River|6700000,00000000|Defensor||6|6|5|4|4|4|6|5|5|2||6|6|5|4
+Gerlo, Danilo Telmo |River|3000000,00000000|Defensor||8|||||||||3|4|5|6|4|
+Musacchio, Mateo Pablo |River|1100000,00000000|Defensor||||||||||||||||
+Villagra, Cristian Carlos |River|4900000,00000000|Defensor||6|13|5||6|5|4|5|5|-1||||4|4
+Sánchez, Nicolás |River|4000000,00000000|Defensor||0|||4|2|3|5|3|5|3|6|4|6|4|1
+Quiroga, Facundo Hernán |River|6000000,00000000|Defensor|||6|2|5|||||||||||
+Boggino, Ignacio |Rosario Central|2100000,00000000|Defensor||||||||||||||||
+Burdisso, Guillermo |Rosario Central|300000,000000000|Defensor||13|7|5|4|6|4|7|12|4|4|||||4
+Alvarez, Pablo Sebastián |Rosario Central|3600000,00000000|Defensor||6|6|4||||||3|5|||4|6|3
+Braghieri, Diego Luis |Rosario Central|2800000,00000000|Defensor||6|7|5|4|||||||5|5|5|6|
+Danelón, Alexis Raúl |Rosario Central|3400000,00000000|Defensor|||||4|||12|7|6|||4|||
+García, Martín Eduardo |Rosario Central|1600000,00000000|Defensor||||||||||||||||
+Núñez, Jorge Martín |Rosario Central|3500000,00000000|Defensor||||6||||||||||||
+Ribonetto, Walter Darío |Rosario Central|3900000,00000000|Defensor|||||6|5|4|7|7|5|4|4|5|||5
+Valentini, Nahuel |Rosario Central|900000,000000000|Defensor|||||6|4||||||5||5|5|
+Vallejo, Mario Alberto |Rosario Central|300000,000000000|Defensor||||||||||||||||
+Lima, Pablo Martín |Rosario Central|3700000,00000000|Defensor||3|6||5|5|2|6|6||11||4|12|6|4
+Aguirre, Gastón Damián |San Lorenzo|4900000,00000000|Defensor||5|13|3|2|2|4|6|6|6|7|5|4|4|7|7
+Bianchi Arce, Nicolás A. |San Lorenzo|3400000,00000000|Defensor||5||4|1|||5||||||||
+Bottinelli, Jonathan P. |San Lorenzo|5000000,00000000|Defensor||5|6|-1|||3||5|4|7|4|3|6|4|6
+Cadelago, Juan Martín |San Lorenzo|800000,000000000|Defensor||||||||||||||||
+Méndez, Sebastián Ariel |San Lorenzo|4300000,00000000|Defensor||||||6|4|||||||||
+Meza, Fernando Nicolás |San Lorenzo|1000000,00000000|Defensor||||||||||||||||
+Tula, Cristian Alberto |San Lorenzo|3900000,00000000|Defensor||6||||||||||||||
+Voboril, Germán Ariel |San Lorenzo|3000000,00000000|Defensor||||4|3|3|||3|||||5||
+González, Hernán Adrián |San Lorenzo|7500000,00000000|Defensor||6|6|2|||4|6|6|5|7|5|5|2|7|8
+De Muner, Pablo Daniel |SM Tucuman|2300000,00000000|Defensor||5|7|1||5|7|5|4|3|5|3|4|4|6|
+Anchén, Jorge Luis |SM Tucuman|2500000,00000000|Defensor|||4|7|2|6|5|5|6|4|6|5|5|||
+Mayola, Emiliano |SM Tucuman|300000,000000000|Defensor||||||||||||||||
+Monge, Juan Luis |SM Tucuman|2000000,00000000|Defensor|||||5||||||||4|||
+Saavedra, Raúl Fernando |SM Tucuman|2300000,00000000|Defensor||5|10|5|6|5|6||6|5|6|5|3||6|4
+Vera, Mario Alberto |SM Tucuman|1300000,00000000|Defensor||||||||||||||||5
+Villavicencio, Matías S. |SM Tucuman|3300000,00000000|Defensor||5|14|4|5|7|7||||5|-2||4||
+Noce, Germán Rodolfo |SM Tucuman|2400000,00000000|Defensor||6|7|3||5|5|6|5|5||0|3|2|5|
+Cattáneo, Agustín |Tigre|300000,000000000|Defensor||||||||||||||||
+Blengio, Juan Carlos |Tigre|4400000,00000000|Defensor|||||2||5|-1||5|6|7|7|2|4|8
+Cincotta, Oscar Emanuel |Tigre|300000,000000000|Defensor||||||||||||||||
+Fontanello, Pablo E. |Tigre|2500000,00000000|Defensor||6|7|7|6|6||||||7||5||
+Leyes, Cristian Damián |Tigre|2200000,00000000|Defensor||||||-1|||||3|6|8||4|
+Oliva, Maximiliano F. |Tigre|900000,000000000|Defensor||||||6|||1|||||||
+Paparatto, Norberto J. |Tigre|3700000,00000000|Defensor||6|6|6|||11|3|1|5||||3||8
+San Román, José A. |Tigre|2500000,00000000|Defensor||||5|||||3|5|6|||||
+Jerez, Pablo Ezequiel |Tigre|3700000,00000000|Defensor||3|6||3|5|5|4|3|5||7|7|5|4|7
+Arruabarrena, Rodolfo |Tigre|4900000,00000000|Defensor||4|4|4|5|5|4|3|||6|6|5|4|4|7
+Papa, Emiliano Ramiro |Velez|5200000,00000000|Defensor||6|5|6|6|6|6|7|6|5|5|6|6|6|6|8
+Pfund, Guillermo Nicolás |Velez|300000,000000000|Defensor||||||||||||||||
+Bittolo, Mariano E. |Velez|400000,000000000|Defensor||||||||||||||||
+Díaz, Ricardo Gastón |Velez|2600000,00000000|Defensor|||||||8|8|8|4||||8|6|6
+Ponce, Waldo Alonso |Velez|4800000,00000000|Defensor||||||||||-1||4|7|||
+Otamendi, Nicolás H. |Velez|700000,000000000|Defensor||6|8|6|4|12|7|6|13|6|6|8|8|14|6|5
+Soto, Carlos Daniel |Velez|1800000,00000000|Defensor||||||||||||||||
+Tobio, Omar Fernando |Velez|2200000,00000000|Defensor||||||||||||||||
+Torsiglieri, Marco N. |Velez|1800000,00000000|Defensor||||||||||||||||
+Domínguez, Sebastián E. |Velez|4800000,00000000|Defensor||6|6|6|6|8|7|6|8|12|3|7|12|8|4|7
+orban, Lucas|river|300000,000000000|Defensor|||||||||||||6|6||1

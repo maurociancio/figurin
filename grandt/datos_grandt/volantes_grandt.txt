@@ -1,0 +1,253 @@
+Mercier, Juan Ignacio |Argentinos Jr|4500000,00000000|Volante||6|5|6|3|6|0||||||5|5|6|5
+Ortigoza, Néstor E. |Argentinos Jr|4600000,00000000|Volante||6|4|6|6|6|6|14|7|6|3||6|7|10|0
+Peñalba, Gabriel Martín |Argentinos Jr|5000000,00000000|Volante||5|4|||6|5|7|7|11|4|5|4|4||3
+Quiroga, Franco Tomás |Argentinos Jr|1600000,00000000|Volante||||5|4|3|4||2|5|4|5||||3
+Recalde, Carlos Ariel |Argentinos Jr|3000000,00000000|Volante|||4|||||||||4||||
+Harbottle, Kevin |Argentinos Jr|1000000,00000000|Volante||||||||||||||||
+Viotti, Rafael Armando |Argentinos Jr|1600000,00000000|Volante||||||||||||||||
+Santibáñez, Carlos A. |Argentinos Jr|1300000,00000000|Volante||||||||6|6||6|||||
+Córdoba, Matías Jesús |Argentinos Jr|2000000,00000000|Volante|||5|5||||||||||5||
+Alarcón, Aníbal Fernando |Argentinos Jr|700000,000000000|Volante||||||||||||||||
+Alfonso, Facundo E. |Argentinos Jr|300000,000000000|Volante|||||||||||||||5|2
+Bogado, Mauro Ezequiel |Argentinos Jr|1000000,00000000|Volante||5||||||6|4|5||||6||
+Contreras, José Manuel |Arsenal|900000,000000000|Volante|||3|||||||||||||
+Corro, Alexander Leonel |Arsenal|600000,000000000|Volante||||||||||||||||
+Marcone, Iván José |Arsenal|600000,000000000|Volante||4||5|||||||||2|7|5|5
+Pellerano, Cristian A. |Arsenal|4200000,00000000|Volante||6|5|5|4|5|3|11|4|6|3|4|7|23|0|
+Poggi, Federico Hernán |Arsenal|3600000,00000000|Volante|||||6|5|4|5|||5|5|6|6|5|5
+Sachetto, Nahuel A. |Arsenal|600000,000000000|Volante|||||||4|||||||||
+San Martín, Andrés |Arsenal|4000000,00000000|Volante||||||||||||||||
+Sena, Sergio Román |Arsenal|3700000,00000000|Volante||2||2|5|6||4|3|6|4|5|10|11|4|5
+Yacuzzi, Javier Orlando |Arsenal|4300000,00000000|Volante||5|3|4|5|3||5|5|5|5|5|5||4|6
+Casteglione, Carlos D. |Arsenal|5300000,00000000|Volante||3|3||3|5|3|4|2|5|6|2|5|||
+Carrera, Sebastián |Arsenal|4900000,00000000|Volante||4|5|4|5|4|||5|5|5|||8|4|
+Aguirre, Nicolás Diego |Arsenal|400000,000000000|Volante||||||||||||||||
+Carabajal, Matías Emilio |Arsenal|3000000,00000000|Volante||||||||||||||||
+Erviti, Walter Daniel |Banfield|6800000,00000000|Volante||4|4|5|6|3|4|4|6|6|5|5|6|6|6|5
+Gómez, Gustavo Ezequiel |Banfield|900000,000000000|Volante|||4|5||||||||||||
+González, Marcelo |Banfield|300000,000000000|Volante||||||||||||||||
+Laso, Maximiliano G. |Banfield|1900000,00000000|Volante||||||||||||||||5
+Pío, Emmanuel |Banfield|3000000,00000000|Volante||5|3||5||5||6|||4|5|6||
+Raymonda, Santiago |Banfield|4200000,00000000|Volante|||5|4||5|5|5|6|6|5|4|2|4|5|
+Santana, Fabián Ernesto |Banfield|1500000,00000000|Volante|||||||5|||||||||
+Díaz, Andrés Alejandro |Banfield|2300000,00000000|Volante||||||||||||||||
+Rodríguez Rubio, James |Banfield|300000,000000000|Volante||5|||||5|||||||6|5|4
+Bustos, Maximiliano |Banfield|3900000,00000000|Volante||5|4|6|3|3||5|5|6|5|-1||7|3|3
+Sardella, Federico Javier |Banfield|500000,000000000|Volante||||||||||||||||5
+Bertolo, Nicolás Santiago |Banfield|6900000,00000000|Volante||5|2|6|11|5|7|5||5|11|5|6|6|4|
+Benavídez, Exequiel |Boca|700000,000000000|Volante|||7||5|3||4||||||4||
+Riquelme, Juan Román |Boca|14000000,0000000|Volante||5|7||6||||||2||6|4|5|0
+Díaz, Damián Rodrigo |Boca|3300000,00000000|Volante||||||||||||||3||
+Gaitán, Osvaldo Nicolás |Boca|3900000,00000000|Volante||4|7|6|10||5|5|3|4|||5|4|5|
+González, Alvaro Rafael |Boca|3700000,00000000|Volante|||||||||4|5||||||
+Gracián, Leandro |Boca|4500000,00000000|Volante||4||5||5||4|3||4|||||
+Chávez, Cristian Manuel |Boca|5300000,00000000|Volante|||||6|4|3|5|5|5|17|5||||
+Vargas, Fabián Andrés |Boca|5600000,00000000|Volante||5|7|4||3|6|||4||6|7|||
+Battaglia, Sebastián A. |Boca|8500000,00000000|Volante|||||3|||||||||||
+Battaglia, Sebastián A. |Boca|300000,000000000|Volante||2||11||3|5|3||9|7||5|0||11
+Arce, Federico |Boca|400000,000000000|Volante||||||||||||||||
+Torres, Nicolás Emanuel |colon|2500000,00000000|Volante||5||11|5||6|4|5||||4|||
+Prediger, Sebastián |colon|3600000,00000000|Volante|||3|7|6|4|8|10|6|5|4|4|||4|7
+Ramírez, Alfredo Germán |colon|2600000,00000000|Volante||5|2|5|11|4||||5|7|5|4|5|11|5
+Rodríguez, Pablo Martín |colon|2000000,00000000|Volante||||8||||||||||||
+Sánchez, Facundo |colon|300000,000000000|Volante||||||||||5|6|5||||
+Oyola, Matías Damián |colon|3400000,00000000|Volante||6|5|5|4|11||4|4|5|5||5|5||
+Capurro, Alejandro R. |colon|5300000,00000000|Volante||7|0|||5|7|6|3|5|0|||||
+Miranda, Hugo |colon|300000,000000000|Volante||||||||||||||||
+Garnier, Pablo Sebastián |colon|3100000,00000000|Volante||5||||||||||||||
+Acosta, Lucas Emanuel |colon|3700000,00000000|Volante||8|4|||||||3||5||11|6|4
+Sánchez Prette, Cristian |Estudiantes|4200000,00000000|Volante||||||4|||||8||6||4|6
+Galván, Diego Alberto |Estudiantes|4400000,00000000|Volante|||4|4||5|6|||3|11||6||5|3
+Martínez, Horacio Raúl |Estudiantes|300000,000000000|Volante||||||||||||||||
+Morales, Leonardo M. |Estudiantes|600000,000000000|Volante||||||||||||||||
+Núñez, Maximiliano E. |Estudiantes|800000,000000000|Volante|||5|||||||3|17||||4|5
+Pérez, Enzo Nicolás |Estudiantes|4300000,00000000|Volante||||4|2|3||4|4|||29|4|7||
+Sánchez, Matías Ariel |Estudiantes|4200000,00000000|Volante||0||||5|4|||3|6||6||2|
+Huerta, Juan Augusto |Estudiantes|2300000,00000000|Volante||5|3|||5|5||||||||5|6
+Verón, Juan Sebastián |Estudiantes|12800000,0000000|Volante||4||3|3|||6|8|11||6||4||
+Braña, Rodrigo |Estudiantes|5200000,00000000|Volante||||4|6|||16|7|||5||7||
+Benítez, Leandro Damián |Estudiantes|4800000,00000000|Volante||5|3|4|0||5|5|5|||5||6||
+Birge, Roberto Matías |Estudiantes|500000,000000000|Volante|||||||||||5||3|||
+Luna, Jorge Luis |Gimnasia J|3400000,00000000|Volante|||6||5||||4||4||||4|4
+Mateo Alustiza, Diego |Gimnasia J|3200000,00000000|Volante||3|7|6|9|6|6|4|6|4|6|10|5|||
+Montenegro, Ariel A. |Gimnasia J|3000000,00000000|Volante||4|12||||||||2||5|||
+Pieters, Fabio Ariel |Gimnasia J|2500000,00000000|Volante|||||||||3||||5|6|1|6
+Ramasco, Daniel Esteban |Gimnasia J|3900000,00000000|Volante||3|5|3||3|3|1||5|2|6||||3
+Iuvalé, Silvio Oscar |Gimnasia J|3200000,00000000|Volante|||6|5|4|6|5|4|4|1||||16|6|5
+Gómez, Ricardo Ernesto |Gimnasia J|3600000,00000000|Volante||4|8|6|9|7|5|5|5|12|2||4|4|4|5
+Lima, René Martín |Gimnasia J|3700000,00000000|Volante||||||||||||||||
+Busse, Walter Alejandro |Gimnasia J|3500000,00000000|Volante||4|17|5|6|6|11|5|5|11|6|6|4|6|6|
+Fileppi, Claudio Oscar |Gimnasia J|3300000,00000000|Volante||5||||||||||4|5|||
+Aued, Luciano Román |Gimnasia LP|2000000,00000000|Volante|||||||||6||5|3|||11|3
+Messera, Mariano |Gimnasia LP|4000000,00000000|Volante||||6|5|5|5|5|4|4|12|6|5|||5
+González, Esteban N. |Gimnasia LP|3100000,00000000|Volante||||||3|5|5|6|5|7|16|4|5|3|
+Domenez, Agustín A. |Gimnasia LP|500000,000000000|Volante||||||||||||||||
+De Blasis, Pablo Ezequiel |Gimnasia LP|400000,000000000|Volante||||||||||||||||
+Castro, Lucas Nahuel |Gimnasia LP|300000,000000000|Volante||||||4||||||||||
+Piatti, Ignacio |Gimnasia LP|5900000,00000000|Volante||6|4|4|6||4|||5||||4||
+Chaves, Jonatan Daniel |Gimnasia LP|1500000,00000000|Volante||||||||||||||||
+Rinaudo, Fabián Andrés |Gimnasia LP|3700000,00000000|Volante||4|5|6|6|7|6|0||10|4|6|5|2|3|
+Romero, Sebastián Ariel |Gimnasia LP|4000000,00000000|Volante||16|4|5|3|6|9||4|6|12|5|4|3|3|21
+Villar, Diego Nicolás |Gimnasia LP|3700000,00000000|Volante||6|5|3|0|||12||||||||
+Alderete, Reinaldo A. |Gimnasia LP|2100000,00000000|Volante||||||||||||||||5
+Encina, Hernán Nicolás |Godoy Cruz|3200000,00000000|Volante||4|-1|||6|5|6|2|||6|5|||
+Páez, Emiliano Rubén |Godoy Cruz|600000,000000000|Volante||||||||||||||||
+Olmedo, Nicolás Andrés |Godoy Cruz|2900000,00000000|Volante|||6|5|5|-1||||6|7|5|5|5|7|7
+Leiva, Cristian Gustavo |Godoy Cruz|3000000,00000000|Volante||5|5|4|7|4|5|7|6|7|4|6|7|6|5|6
+Garín, Ernesto Sebastián |Godoy Cruz|900000,000000000|Volante||||||||||||||||
+Fabro, Martín |Godoy Cruz|2300000,00000000|Volante||||||||||||||||
+Rojas, Ariel Mauricio |Godoy Cruz|1900000,00000000|Volante||5|||5|5|5|7|6|6|4|5|5||5|6
+Figueroa, Víctor Alberto |Godoy Cruz|3000000,00000000|Volante||4|6|10|6|22||6|6|6|16|6|6|5|4|
+Torresi, Mariano Luis |Godoy Cruz|1000000,00000000|Volante||||||||||||||||
+Díaz, Gonzalo Orlando |Godoy Cruz|300000,000000000|Volante||||||||||||||||
+Conejero, Marcio Darío |Godoy Cruz|400000,000000000|Volante||||||||||||||||
+Aguirre, Martín S. |Godoy Cruz|2500000,00000000|Volante|||5|4|4||6|5|||||5|6|4|11
+Bailo, Facundo |Godoy Cruz|300000,000000000|Volante||||||||||||||||
+Camargo, Alejandro M. |Godoy Cruz|300000,000000000|Volante||||||||||||||||
+Cappa, Enzo Gabriel |Godoy Cruz|700000,000000000|Volante||||||||||||||||
+Toranzo, Patricio Daniel |Huracan|2000000,00000000|Volante||5|||4|||6|6||12|7|11|3|11|6
+Moreno, Marcos |Huracan|300000,000000000|Volante||||||||||||||||
+Pagés, Fernando Gabriel |Huracan|1200000,00000000|Volante||||||||||||||||
+Pastore, Javier Matías |Huracan|5300000,00000000|Volante||5|7|18|5|6|8|8|8|5|24|23|5|6|5|5
+Sánchez, Alan |Huracan|1900000,00000000|Volante|||5||4||6|6||5|||5|||
+Suárez, Damián Isaac |Huracan|300000,000000000|Volante||||||||||||||||
+Valor, Maximiliano |Huracan|300000,000000000|Volante||||||||||||||||
+Meza Sánchez, Sergio S. |Huracan|1200000,00000000|Volante||||||||||||||||
+Bolatti, Mario Ariel |Huracan|5000000,00000000|Volante||11|10|9|5|5|17|7|7|12|8|8|17|6|19|7
+González, César Eduardo |Huracan|4500000,00000000|Volante||6|6|7|5|6|0|17|7|6|5|7|3|6|6|5
+Cosentino, Mariano Raúl |Huracan|500000,000000000|Volante||||||||||||||||
+Díaz, Leandro Javier |Huracan|3800000,00000000|Volante||6|7|6|6|6||||||||5|7|3
+Esmerado, Gastón Rubén |Huracan|3300000,00000000|Volante|||5|13|4|||||||||||
+Vittor, Sergio Javier |Independiente|2700000,00000000|Volante|||||6|4|||||||4|4||5
+Rodríguez, Patricio Julián |Independiente|2200000,00000000|Volante|||||||||7|5||||||6
+Ríos, Leonel |Independiente|4500000,00000000|Volante||||12|6|3|5|3|11||1|2|4|3||
+Pusineri, Lucas Andrés |Independiente|3500000,00000000|Volante||5|3|6|2||6||6|2|4|4|6|0|4|3
+Montenegro, Daniel G. |Independiente|8800000,00000000|Volante||20|10|12|4|12|4|10|23|5|10|1|29|4|6|5
+Mancuello, Federico A. |Independiente|800000,000000000|Volante||8|4|7|10|11|6|||5||4|4|0||9
+Centurión, Emanuel A. |Independiente|3500000,00000000|Volante||||6||||4||||||||
+Depetris, Leandro |Independiente|2300000,00000000|Volante|||||||||||1|||||
+Fredes, Hernán Daniel |Independiente|3200000,00000000|Volante||5||11|4|||1|5||3|||||
+Gavilán, Diego Antonio |Independiente|4000000,00000000|Volante||5|5|||||||||3|5|||
+Godoy, Fernando Gabriel |Independiente|300000,000000000|Volante||||||||0||4|||||3|3
+Ledesma, Damián David |Independiente|3500000,00000000|Volante||4|3|||5|||||1|1|5|2||
+Pizarro, Guido |lanus|300000,000000000|Volante||||||||||||||||
+Salomón, Sebastián |lanus|4000000,00000000|Volante||6|6||6|5|3|6|4|4|2|||||
+Salvio, Eduardo Antonio |lanus|4200000,00000000|Volante|||||8|6|14|12|6|5|6|7|10|5|7|10
+Valeri, Diego Hernán |lanus|6600000,00000000|Volante||6|9||9|4|6|5|3|6|||5|3|6|
+Zaninovich, Mario Matías |lanus|300000,000000000|Volante||||||||||||||||
+Quiroga, Raúl |lanus|300000,000000000|Volante||||||||||||||||
+Peralta, Adrián M. |lanus|2800000,00000000|Volante||||||||||||||||
+Blanco, Sebastián M. |lanus|11100000,0000000|Volante||13|||5|3|5|6|6|5|17|6|5|2||
+Lugo, Maximiliano |lanus|300000,000000000|Volante||||5|||||||5|||||6
+González, Diego Hernán |lanus|3800000,00000000|Volante|||7|2|5|||6||4||5|5|4|3|
+Ledesma, Eduardo F. |lanus|2000000,00000000|Volante||6||4|||||5|6|8|6||4|6|6
+Fritzler, Matías Leonel |lanus|4900000,00000000|Volante||12||3|6|2|6|8|4||5|4|6|5|6|6
+Benítez, Leandro Raúl |lanus|400000,000000000|Volante||||||||||||||||
+Monsalvo, Pablo Martín |Newels|2000000,00000000|Volante||||||||||||5||2||
+Machuca, Alexis |Newels|300000,000000000|Volante|||||||||||||||5|10
+Vangioni, Leonel Jesús |Newels|3600000,00000000|Volante||7|18|3||5|14|5|3|3|6|5|2|5|4|5
+Scotti, Diego |Newels|2000000,00000000|Volante||||||||||||||||
+Sperdutti, Mauricio E. |Newels|3000000,00000000|Volante||6|4|5||||5|5||5|14|5|5|1|6
+Torres, Leandro Gabriel |Newels|3000000,00000000|Volante|||5|||6|||||4||||4|
+Pérez, Pablo Javier |Newels|1700000,00000000|Volante|||||||||||||||3|
+Machín, Gastón |Newels|3900000,00000000|Volante||||||11|4|5|6|-1||1||2|4|
+Formica, Mauro Abel |Newels|2800000,00000000|Volante||5|2|9|11|9|6|4|9|12|||11|5|2|
+Bernardello, Hernán D. |Newels|5800000,00000000|Volante||13|5|5|4|4|5|2|9|4|||6|6|5|
+Bernardi, Lucas |Newels|4000000,00000000|Volante||7||4|6||6|4|5|3|4|7|3|-1||6
+Cristaldo, Ernesto Rubén |Newels|2800000,00000000|Volante|||||3||||||3|||||
+Donnet, Matías Abel |Newels|2800000,00000000|Volante||||5||||||||||||
+Grazzini, Sebastián Hugo |Newels|2100000,00000000|Volante||||||||||||||||
+Yacob, Claudio Ariel |Racing|4600000,00000000|Volante|||4|4|5|11|6|3|12|10|3|5|5|5||6
+Wagner, Martín |Racing|2200000,00000000|Volante||2|3|8|5|5|5|5|||||||10|12
+Salto, Juan Manuel |Racing|300000,000000000|Volante||||||||||||||||
+Prichoda, Lihué Darío |Racing|2100000,00000000|Volante||||||||||||||||
+Zuculini, Franco |Racing|3200000,00000000|Volante|||||4|6|7|3|12|10|6|6|5|17|4|
+Lucero, Oscar Adrián |Racing|3000000,00000000|Volante||4|4|2||4|10|4|6|5|4|4|2|6|2|12
+Pérez, Gonzalo Ezequiel |Racing|600000,000000000|Volante||||||||||||||||
+Fernández, José Luis |Racing|1700000,00000000|Volante||||||||||||||||
+Falcón, Juan Carlos |Racing|4000000,00000000|Volante|||3|||||||||||||
+González, Leandro |Racing|3700000,00000000|Volante||3|6||3|4||4|||1||||10|
+Chatruc, José Manuel |Racing|3100000,00000000|Volante||||4|||||||||3|||
+Castromán, Lucas Martín |Racing|5000000,00000000|Volante||5|5|||||5||7|4|||12||
+Gallardo, Marcelo Daniel |River|8800000,00000000|Volante||24|7|6|4|5|11|12|4|4||||||
+Galmarini, Martín |River|3800000,00000000|Volante||||||||||||6|||3|
+Fernández, Gustavo M. |River|600000,000000000|Volante||||6||||||||||||
+Fernández, Augusto M. |River|6500000,00000000|Volante||7|6|5|4|4||||||||5||
+Domingo, Nicolás Mario |River|3000000,00000000|Volante||||||3|4|4|2|2|||2|4|5|3
+Giménez, Fabio |River|900000,000000000|Volante||||||||||||||||
+Buonanotte, Diego Mario |River|10900000,0000000|Volante||5|5|3|3||7|6|3|6|2|7|4||3|11
+Díaz, Mauro Alberto |River|800000,000000000|Volante||||||10||7|6|7|5|7|5||4|4
+Sambueza, Rubens Omar |River|3000000,00000000|Volante||||||||||||||||
+Bou, Gustavo Leonardo |River|1100000,00000000|Volante|||||||5|||||||||
+Barrado, Diego Armando |River|3100000,00000000|Volante|||||5|10||5|4|4|4|17|6|5||
+Ahumada, Oscar Adrián |River|5000000,00000000|Volante||7|4|6|3||4|6|5|6|4|6||||
+Archubi, Rodrigo Javier |River|3600000,00000000|Volante||-1|||2|||||||||5||
+Affranchino, Facundo A. |River|600000,000000000|Volante||||||||||||||||
+Abelairas, Matías E. |River|7100000,00000000|Volante||5|5|4|5|3|||||4||||2|5
+Zarif, Omar |Rosario Central|3000000,00000000|Volante||||5||4|5|3||||||||5
+González, Cristian A. |Rosario Central|5000000,00000000|Volante|||||||11|11|7|4|3|5|5|5|4|0
+Méndez, Jesús David |Rosario Central|4000000,00000000|Volante||12|11|7||||||4|||7|3|6|
+Moreno y Fabianesi, Iván |Rosario Central|5300000,00000000|Volante||5|12|7|5|5|5|9|5|4|5|5|4|10|7|4
+Moya, Lucas Maximiliano |Rosario Central|800000,000000000|Volante||||||||||||||||
+Núñez, Gervasio Daniel |Rosario Central|3000000,00000000|Volante||||||||||||||||
+Paglialunga, Mario Angel |Rosario Central|2400000,00000000|Volante||||||||||||||||
+Rivero, Martín Rodrigo |Rosario Central|400000,000000000|Volante||||||||||||||||
+González, Ezequiel |Rosario Central|7400000,00000000|Volante||||7|5|6|5|6|7||5|4|3|6||
+Gómez, Jonatan David |Rosario Central|1300000,00000000|Volante||||||||||||||||5
+Escobar, Matías L. |Rosario Central|4000000,00000000|Volante||5|5|6|5|3||||||||5|6|4
+Borzani, Leonardo Luis |Rosario Central|3800000,00000000|Volante||6|5||4|5|6|6|5|5|3|||||
+Choy González, Gonzalo |Rosario Central|4200000,00000000|Volante||||||||||||||||
+Torres, Juan Manuel |San Lorenzo|5600000,00000000|Volante|||4||4|4|2|4|5|-1||2|4|5|6|11
+Solari, Santiago Hernán |San Lorenzo|8500000,00000000|Volante|||||4||3|17|4|||2|1|6|11|6
+Santana, Jonathan |San Lorenzo|5500000,00000000|Volante||5||-1||||5|||2|||||
+Rivero, Diego Alejandro |San Lorenzo|4100000,00000000|Volante||3|6|5|4|4||6|3||4|4|||6|8
+Torres Román, Aureliano |San Lorenzo|5700000,00000000|Volante||6|5||2||3|||4|11|4|3|||7
+Reynoso, Salvador A. |San Lorenzo|700000,000000000|Volante||||||||||4||||||
+Rinaldi, Leonel |San Lorenzo|600000,000000000|Volante||||||||||||||||
+Martínez, Damián |San Lorenzo|300000,000000000|Volante|||||4||4|||||||||
+Gómez, Alejandro Darío |San Lorenzo|6600000,00000000|Volante|||17|5|7|5|5|5|6|7|5|6|5|5||
+Ledesma, Cristian Raúl |San Lorenzo|6500000,00000000|Volante||11|4|4|6|4|3|4|2||5||3|3|5|
+González, Sebastián |San Lorenzo|300000,000000000|Volante|||||||||||||||5|5
+Alvarado, Pablo Andrés |San Lorenzo|1900000,00000000|Volante||||||||5||5||||||
+Barrientos, Pablo César |San Lorenzo|9500000,00000000|Volante||||||||||||||||
+Narese, Exequiel Albano |SM Tucuman|300000,000000000|Volante|||||||5|||||||||
+Nievas Escobar, Miguel |SM Tucuman|600000,000000000|Volante|||||||||||||||6|
+Pérez Castro, Facundo |SM Tucuman|3000000,00000000|Volante||6|5|3|6|6|7|10|6|3|5|4|5|4|6|6
+Pérez, Patricio Pablo |SM Tucuman|3000000,00000000|Volante|||6|||5|11|4|||4|5|5|4||5
+Perugini, Marcelo Fabián |SM Tucuman|2000000,00000000|Volante||6|6|2||||||||||||
+Quinteros, Marcelo Nildo |SM Tucuman|3500000,00000000|Volante||6|||||12|5|5|5|4|2||5|7|5
+Serrano, Jorge Antonio |SM Tucuman|1900000,00000000|Volante|||||3|4||5|5|2|3|2||5|6|11
+Vega, Luis Alberto |SM Tucuman|300000,000000000|Volante||||||||||||||||
+Leone, Ramiro Emiliano |SM Tucuman|3000000,00000000|Volante||||||2||5||||||5|4|6
+La Paglia, César |SM Tucuman|3800000,00000000|Volante|||||||||5|4||||||
+Brandán, Waldo Daniel |SM Tucuman|1000000,00000000|Volante||||||||||||||||
+Cantero, Pablo Daniel |SM Tucuman|2300000,00000000|Volante|||6|6|5|8||6|5|5|6|5|5|||
+Ceballos, Matías |SM Tucuman|600000,000000000|Volante||||||||||||||||
+De Camilo, Gustavo H. |SM Tucuman|300000,000000000|Volante||||||||||||||||
+Giménez, Matías A. |Tigre|4800000,00000000|Volante||15|5|5|6|1|6|5||||||||6
+Sánchez, Walter G. |Tigre|300000,000000000|Volante||||||||||||||||
+Rusculleda, Sebastián |Tigre|4600000,00000000|Volante|||4|5|||5|6|5|8|6|3|7|5|2|6
+Rosano, Sebastián |Tigre|2800000,00000000|Volante||5|3|5|6|5||5|||6|6|4|2||15
+Pasini, Mariano Luis |Tigre|1600000,00000000|Volante||||||||||||||||
+Morel, Martín Gerardo |Tigre|11500000,0000000|Volante||5|9|4|4|||||||||||
+Oviedo, Lucas |Tigre|2000000,00000000|Volante||||||||||||||5|5|
+Castaño, Diego Rafael |Tigre|5500000,00000000|Volante||7|4|3|4|6|7|4|4|5|6|7|6|5|5|6
+Britez, Gerardo Daniel |Tigre|300000,000000000|Volante||||||||||||||||
+Abregú, Gregorio E. |Tigre|300000,000000000|Volante|||||||||5||5|||||
+Blanco, Jonathan Matías |Tigre|2500000,00000000|Volante||||||5|||3|4||||||2
+Botta, Rubén Alejandro |Tigre|300000,000000000|Volante||||||3||||||||||
+Coronel, Leandro Gastón |Velez|1900000,00000000|Volante||5||5|||||4|||||||
+Somoza, Leandro Daniel |Velez|6000000,00000000|Volante||||||||||||||||
+Razzotti, Franco |Velez|2000000,00000000|Volante||11|6|4|7|6|7|6|4|2|5|6|6|5|6|6
+Ocampo, Ramón Darío |Velez|3400000,00000000|Volante||11|4|5|||||||4|||||
+Moralez, Maximiliano N. |Velez|9000000,00000000|Volante||5|5|6|9|5|6|||||5|5|13|4|8
+Cubero, Fabián Alberto |Velez|5000000,00000000|Volante||6|6|4|5|1||4|5|1|2|6|6|7|0|6
+Despósito, Pablo Ignacio |Velez|900000,000000000|Volante||||||||||||||||
+Velázquez, Leandro S. |Velez|1600000,00000000|Volante|||||6|3|7|5|4|7|3|||||
+Zapata, Víctor Eduardo |Velez|5200000,00000000|Volante||5|5|7|11|6|5|4||11|6|11|5|6|11|12
+Cigno, Leonel Luciano |Velez|400000,000000000|Volante||||||||||||||||
+Canteros, Héctor Manuel |Velez|500000,000000000|Volante||||||||||||||||
+Alvarez, Ricardo Gabriel |Velez|500000,000000000|Volante||||||||||||||||
+Bella, Iván Gonzalo |Velez|2000000,00000000|Volante|||5|||||||||||||
+Cabral, Alejandro Ariel |Velez|2300000,00000000|Volante||5||||||||||||||
+Cabrera, Nicolás A. |Velez|4300000,00000000|Volante||3||||||||||||||

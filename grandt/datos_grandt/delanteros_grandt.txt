@@ -1,0 +1,152 @@
+Martínez, Mariano M. |Argentinos Jr|2000000,00000000|Delantero||||||||||||||||
+Abán, Gonzalo Daniel |Argentinos Jr|2300000,00000000|Delantero||||||||||||||||
+Pavlovich, Nicolás |Argentinos Jr|5000000,00000000|Delantero||5|4|4|4|5|5||5|5|4|9||||
+Pérez Tarifa, Gabriel |Argentinos Jr|700000,000000000|Delantero|||||||||||||4|5||4
+Rius Aragallo, Ciro Pablo |Argentinos Jr|400000,000000000|Delantero||5||5|||2||||4|5||||
+Romero, Andrés Fabricio |Argentinos Jr|2100000,00000000|Delantero|||5|4|||||||||||4|3
+Salazar, Hernán Matías |Argentinos Jr|400000,000000000|Delantero||||||||||||||||
+Hauche, Gabriel Agustín |Argentinos Jr|7500000,00000000|Delantero||4|4|2|3|10|10|4|15|5|9|11|5|4|5|3
+Jara, Franco Daniel |Arsenal|600000,000000000|Delantero||||5|4|10|5|||||4|5||4|16
+Sava, Facundo |Arsenal|6700000,00000000|Delantero|||4|4|||||4|4|||||5|
+Bottaro, Juan Eduardo |Arsenal|700000,000000000|Delantero||||||||||5||||||
+Leguizamón, Luciano |Arsenal|7000000,00000000|Delantero||9|5|5|16|-1|4|5||4|5|4||||6
+Matos, Mauro |Arsenal|2000000,00000000|Delantero||5|4|4||5|4|5|3||9|4||7||5
+Benedetto, Darío |Arsenal|500000,000000000|Delantero|||||||||4||4||4||4|5
+García, Cristian Andrés |Banfield|1900000,00000000|Delantero||||||||||||5||||
+Barrales, Jerónimo |Banfield|2600000,00000000|Delantero|||||3|5||||||4||||
+Di Vanni, Guido |Banfield|400000,000000000|Delantero||||||||||||||||
+Ferreyra, Facundo |Banfield|600000,000000000|Delantero||||2||||||||||||
+Silva, Santiago Martín |Banfield|5000000,00000000|Delantero||4|8|5|6|6|5|20|10|11|1||6|14|6|4
+Fernández, Sebastián B. |Banfield|2200000,00000000|Delantero||5|4|6|||6|11|15|10|8|6|10|16|6|4
+Palacio, Rodrigo S. |Boca|12000000,0000000|Delantero|||||5||5|||3||5|11|3|3|6
+Figueroa, Luciano Gabriel |Boca|6500000,00000000|Delantero||5|10|4|4|4|||||10|||||
+Viatri, Lucas Ezequiel |Boca|5100000,00000000|Delantero||||||||4||||||||
+Noir, Ricardo Daniel |Boca|3500000,00000000|Delantero||||||4||5||||||||
+Palermo, Martín |Boca|12500000,0000000|Delantero||6|8|5|5||8||5|4||4|19|4|8|20
+Philippe, Jonatan Javier |Boca|600000,000000000|Delantero||||||||||||||||
+Mouche, Pablo Nicolás |Boca|3500000,00000000|Delantero||1||||6||4|6||4|5||5|3|
+Ledesma, Leandro Adrián |colon|300000,000000000|Delantero|||||||6|5|4|||||||
+Bustamante, Mauro |colon|300000,000000000|Delantero||||||||||||||||
+Castillo, Fabián |colon|600000,000000000|Delantero||5|3|||5|||||5|||||
+Valdemarín, Lucas M. |colon|4200000,00000000|Delantero|||5|||||||||||||
+Guerrero, Marcelo F. |colon|3500000,00000000|Delantero||||||||||||4|5|||
+Mena Palomeque, Daley |colon|3200000,00000000|Delantero||5||3|6|3|5|2|5|6|4|10|3|4|5|
+Sciorilli, Sebastián H. |colon|1400000,00000000|Delantero||||5|9|4|12|10|4|4||5||||4
+Fuertes, Esteban Oscar |colon|9100000,00000000|Delantero||5|2|21|6|4|8|5|4|18|10|5|14|10|16|3
+Bogado, Cristian V. |Estudiantes|2000000,00000000|Delantero||||||||||||||||
+Boselli, Mauro |Estudiantes|8100000,00000000|Delantero||5||2|3|||4|11|||4||15||
+Calderón, José Luis |Estudiantes|6500000,00000000|Delantero||5|6||2|4|4|||4|||6||8|10
+Fernández, Gastón N. |Estudiantes|7200000,00000000|Delantero||4||4||9||6|6|||||5|5|
+Galeana, Milton Marcelo |Estudiantes|1300000,00000000|Delantero||||||||||||||||
+Lentini, Ramón Alberto |Estudiantes|1400000,00000000|Delantero|||4|||||||||||||
+Salgueiro, Juan Manuel |Estudiantes|3700000,00000000|Delantero||5|4|5|||4|||5|12|5|6|5||5
+Silva, Héctor Ariel |Gimnasia J|2700000,00000000|Delantero|||||||||||4|10|5|5|3|
+Arraya, Juan José |Gimnasia J|3600000,00000000|Delantero||4|5|13|4|5|4|5||||||||
+Calandria, Pablo Ignacio |Gimnasia J|4300000,00000000|Delantero||2|||3|||||||||||3
+Ferradas, Mauricio Javier |Gimnasia J|2600000,00000000|Delantero|||11|5|6|10||5|5|5|5|5|4|5|2|4
+Romero, César Antonio |Gimnasia J|300000,000000000|Delantero||4||||||||||||||
+Miranda, Diego Armando |Gimnasia J|1000000,00000000|Delantero|||5||5|6|5|4|4|5|3|||||
+Niell, Franco |Gimnasia LP|3400000,00000000|Delantero|||5|4|5|4||||||||4||
+Alonso, Diego Martín |Gimnasia LP|4700000,00000000|Delantero||4||5|||||3|4|6|3|1|4|9|4
+Cuevas, Juan Ezequiel |Gimnasia LP|3300000,00000000|Delantero||4|6|11|11|10|10|4|5|6|17|6|6|5|7|4
+Stracqualursi, Denis |Gimnasia LP|1500000,00000000|Delantero||||||5||4||||||4||
+Neira, Juan Angel |Gimnasia LP|1200000,00000000|Delantero|||||||||4|||||||
+Martinena, Néstor G. |Gimnasia LP|1800000,00000000|Delantero||||||||||||||||
+Sosa, Roberto Carlos |Gimnasia LP|6000000,00000000|Delantero||4|4|4|2|9|4|5||||||||
+Borghello, Iván Emilio |Godoy Cruz|3900000,00000000|Delantero||||4|5|7|5|5|10|6|6|4|5|5|15|11
+Castillo, Jairo F. |Godoy Cruz|5000000,00000000|Delantero||||||||||||||||
+Escudero, Adrián R. |Godoy Cruz|300000,000000000|Delantero||||||||||||||||
+Jiménez, Roberto |Godoy Cruz|3700000,00000000|Delantero||10|4||||||||4|3||||
+Vera, Jesús Jonathan |Godoy Cruz|800000,000000000|Delantero||||||||||||||||3
+Alaniz, Maximiliano N. |Godoy Cruz|400000,000000000|Delantero||||||||||||||||5
+Pinto, Sebastián Andrés |Godoy Cruz|1800000,00000000|Delantero||||||||||||||||
+Caruso, Leandro Rubén |Godoy Cruz|3900000,00000000|Delantero||6|5|5|11|6|10|6|7|15|21|6|6|3|7|
+Casartelli, Carlos David |Huracan|2500000,00000000|Delantero||||||||||||||||
+Colzera, Ariel Damián |Huracan|2000000,00000000|Delantero||||||||||||||||
+De Federico, Matías A. |Huracan|2500000,00000000|Delantero||5|5|11|6|11|6|7|16|6|7|7|5|5|10|6
+Medina, Leonardo A. |Huracan|2000000,00000000|Delantero||||5||||||3|10|5|1|4|4|
+Nieto, Federico Gastón |Huracan|3900000,00000000|Delantero||9|10|5|5|4|10|5|11|3||||||4
+Trecco, Néstor Nicolás |Huracan|700000,000000000|Delantero||||||||||||||||
+Nieto, Luciano Federico |Huracan|900000,000000000|Delantero||||||||||||||||
+Higuaín, Federico F. |Independiente|4900000,00000000|Delantero|||5||4||1|||||4||||
+Sosa, Víctor Ismael |Independiente|3300000,00000000|Delantero||4|3|8|||3|5||5|4||||4|
+Núñez, Leonel Jorge |Independiente|7000000,00000000|Delantero|||3||4|5||1|6|5|2|3||2||
+Mazzola, Nicolás Mario |Independiente|300000,000000000|Delantero||6|4|||3|5|||||||||
+Gandín, Darío Alejandro |Independiente|4900000,00000000|Delantero||||5|5||4||11|4|4|||2|4|3
+Churin, Diego |Independiente|800000,000000000|Delantero||||||||||||3|4|||
+Blanco, Alexis Hernán |Independiente|400000,000000000|Delantero||||||||||||||||
+Moreno, José Alcídes |Independiente|3000000,00000000|Delantero||2||||||||||||||
+Sand, José Gustavo |lanus|12500000,0000000|Delantero||12||4|29|2|6|5|4|15|8|6|13|3|10|14
+Balvorín, Gustavo A. |lanus|3900000,00000000|Delantero||||||||||||||||
+Arias, Javier |lanus|300000,000000000|Delantero||||||||||||||||
+Biglieri, Santiago |lanus|3600000,00000000|Delantero||6||||4||||||||||
+Cano, Germán Ezequiel |lanus|1400000,00000000|Delantero||||||||||||||||
+Cubilla, Walter Silvestre |lanus|300000,000000000|Delantero||||||||||||||||
+Dovetta, Roberto Marcos |lanus|1000000,00000000|Delantero||||||||||||||||
+Lagos, Diego Eduardo |lanus|4900000,00000000|Delantero|||10|3|7||||5|5|10|5|||5|10
+Ramírez, Nicolás F. |lanus|1900000,00000000|Delantero|||5|5||||||||||||
+Menéndez, Cristian M. |lanus|800000,000000000|Delantero|||11|||||||||||||
+Falone, Federico |Newels|300000,000000000|Delantero||||||||||||||||
+Armani, Leandro Diego |Newels|2100000,00000000|Delantero||6|3|4|10|10|5|4|4|3|3|2|4||4|
+Barreyro, Guido |Newels|300000,000000000|Delantero||||||||||||||||
+Cobelli, Juan Manuel |Newels|300000,000000000|Delantero||||||||||||||||
+Steinert, Héctor Damián |Newels|3000000,00000000|Delantero|||||4|||||||||||
+Torres, Diego Alberto |Newels|4000000,00000000|Delantero||||||||||||||||
+Da Silva, Alejandro D. |Newels|3900000,00000000|Delantero|||||||5|4|||10|10|4|4|3|3
+Carrasco, Mauricio N. |Newels|1200000,00000000|Delantero||||||||||||||||
+Salcedo, Santiago Gabriel |Newels|8000000,00000000|Delantero||5|5|5|4|5|5|5|3|3|3||4|4|4|3
+Sánchez Sotelo, Juan I. |Racing|1900000,00000000|Delantero|||||||||||3|||||
+Caballero, Pablo Nicolás |Racing|2200000,00000000|Delantero||4|15|4|1||3||||3|||||6
+Lugüercio, Pablo Ariel |Racing|4800000,00000000|Delantero||4|5|5|11|6|6|5|6|7||4|3||5|6
+Ramírez, Rubén Darío |Racing|6500000,00000000|Delantero|||||||3||12|9|3|6|5|6||
+Risso, Brian |Racing|300000,000000000|Delantero||||||||||||||||
+Vigneri, Nicolás |Racing|3000000,00000000|Delantero||||||||||||||||
+Respuela, Juan Cruz |Racing|300000,000000000|Delantero||||||||||||||||
+Gil, Gonzalo |River|500000,000000000|Delantero||||||||||||||||4
+Fabbiani, Cristian Gastón |River|8100000,00000000|Delantero||7|3||5||4||3|2|2|2|4|10|5|2
+Rosales, Mauro Damián |River|5500000,00000000|Delantero||||4|5||5|4||5|3|||||
+García, Radamel Falcao |River|11500000,0000000|Delantero||14|5|12||5|5|12|4|10|6|6|5|15|4|4
+Ríos, Andrés Lorenzo |River|2300000,00000000|Delantero||||||3||||||||||
+Villalba, Daniel Alberto |River|500000,000000000|Delantero||||||||||||||||
+Flores, Robert Mario |River|3800000,00000000|Delantero||||||||||||||9|4|
+Caraglio, Milton Joel |Rosario Central|3800000,00000000|Delantero||6|21|10|4|5|4|4|5|3||||||
+Castillejos, Gonzalo R. |Rosario Central|600000,000000000|Delantero||||||||||||||||
+Franzoia, Andrés |Rosario Central|5000000,00000000|Delantero|||||||3|||6||6|5|6|8|
+Gurrieri, Leandro E. |Rosario Central|600000,000000000|Delantero||||||||||||||||5
+Herrera, Emmanuel |Rosario Central|300000,000000000|Delantero||||||||||||||||
+Serra, Emanuel Facundo |Rosario Central|300000,000000000|Delantero||||||||||||||||
+Zelaya, Emilio José |Rosario Central|4500000,00000000|Delantero||16|5|7|4|4||5|5|8|6|4|10|5|7|5
+Vizcarra, José Nicolás |Rosario Central|4200000,00000000|Delantero||5||||5|||5|6|4|4|4|||
+Peirone, Hernán Gastón |San Lorenzo|1500000,00000000|Delantero||||||||||||||||
+Acosta, Claudio Germán |San Lorenzo|1200000,00000000|Delantero||||||||||||||||
+Bergessio, Gonzalo R. |San Lorenzo|10900000,0000000|Delantero||3|11|-1||5|4||9|10|11|5|4|2||21
+Bordagaray, Fabián |San Lorenzo|400000,000000000|Delantero||||||||||4|6|4|3|5||
+Silvera, Néstor Andrés |San Lorenzo|9200000,00000000|Delantero||5|5||8|4|||5|5||||5|10|5
+Fornaroli, Bruno |San Lorenzo|3400000,00000000|Delantero||5|5|||5|4|3|4||19|4|4|||
+Romeo, Bernardo Daniel |San Lorenzo|4000000,00000000|Delantero||||||||||||||||
+Chávez, Cristian Gabriel |San Lorenzo|2000000,00000000|Delantero|||5||6|5|4|4||4||5||||
+Vega, Daniel Alejandro |SM Tucuman|3800000,00000000|Delantero||||||||||||3||||7
+Canio, Cristian |SM Tucuman|4500000,00000000|Delantero||5|6|5|5|4|10|5|4|5|||5|||
+Urbano, Matías Héctor |SM Tucuman|2900000,00000000|Delantero|||5|||||10|3|5|13|4|4|4|5|
+Ibáñez, Antonio Roberto |SM Tucuman|1800000,00000000|Delantero||||5||||||||||||
+Ibáñez, Gustavo César |SM Tucuman|3500000,00000000|Delantero||15|6|6|6|4|12|5|5|6||5|6|4|5|5
+Turdó, Mario Héctor |SM Tucuman|3900000,00000000|Delantero|||||5|||||4|5|||5|5|5
+Herrera, Nicolás Víctor |SM Tucuman|2600000,00000000|Delantero||4|4|7|4|||||||||5|11|5
+Fernández, Miguel Angel |SM Tucuman|400000,000000000|Delantero||||||||||||||||
+Attadía, Jeremías Pablo |Tigre|300000,000000000|Delantero||||||||||||||||
+Bardaro, Cristian Pedro |Tigre|3000000,00000000|Delantero||||||||||||||||
+Lazzaro, Leandro Hernán |Tigre|5500000,00000000|Delantero||12|5|4|3|4|4|2||4||4|6|7|3|6
+Leguizamón, Leandro |Tigre|300000,000000000|Delantero||||||||||||||||
+Luna, Carlos Ariel |Tigre|4300000,00000000|Delantero||5|5|4|9|9|4|4|8|10|19|10|16|5|6|11
+Pumpido, Facundo |Tigre|300000,000000000|Delantero||||||||||||||||
+Villegas, Mauro Darío |Tigre|1800000,00000000|Delantero||||||||5||||||||
+Altobelli, Víctor Leonel |Tigre|3300000,00000000|Delantero||||||5||||||||||
+Suárez, Guillermo A. |Tigre|3000000,00000000|Delantero|||||||4|5|3||4|||||
+Ayala Villagra, Néstor |Tigre|4300000,00000000|Delantero||8|4||||5|3|5|4|6|10|10|5|4|
+Cristaldo, Jonatan E. |Velez|3800000,00000000|Delantero||||||6|6||4|6|10|10|10|5|6|
+Guzmán, Andrés Edgardo |Velez|900000,000000000|Delantero||||||||||||||||
+Larrivey, Joaquín Oscar |Velez|5800000,00000000|Delantero||6|5|16|5|5|1|6|4|4|4|2||||5
+López, Hernán Rodrigo |Velez|5100000,00000000|Delantero||5|9|5|10|10|16|12|4|4|5|8|4|11|9|1
+Nanni, Roberto Antonio |Velez|3400000,00000000|Delantero||||5|6|||||||||||
+Martínez, Juan Manuel |Velez|3700000,00000000|Delantero||||||||16|6|4|5|6|||7|5
+Piris, Leonardo Fabián |Velez|400000,000000000|Delantero||||||||||||||||
