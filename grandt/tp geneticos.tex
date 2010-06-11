@@ -136,77 +136,13 @@ siguientes:
 
 \subsection{Resultados} %resultados
 
-Luego del proceso de entrenamiento de la red, se gener\'o una imagen con 27 figuras para probar el funcionamiento de la aplicaci\'on. Estas figuras presentan tama\~nos, orientaciones y geometr\'ias diversas para evaluar el grado de generalizaci\'on alcanzado.
-
-En la figura \ref{salida_ejemlpo} se puede apreciar la salida de la aplicaci\'on en la cual puede verse el correcto funcionamiento de la misma en la gran mayor\'ia de los casos.
-
- 	           \begin{figure}[H]
-
-	                  \begin{center}
-	                %	\advance\leftskip-1.5cm
-	                  %  \includegraphics[width=12cm]{salida.png}
-	                    \caption{\label{salida_ejemlpo} Salida generada por la aplicaci\'on. }
-	                  \end{center}
-	            \end{figure}
-
-%\newpage
-
-En la siguiente tabla se pueden apreciar algunos de los datos de entrada y salida de la red neuronal aplicada al caso de prueba presentado.
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{|l|c|c|c|c|c|c|c|}
-  \hline                       
-  \textbf{Figura} & \textbf{s1} & \textbf{s2} & \textbf{s3} & \textbf{o1} & \textbf{o2} & \textbf{o3}\\
-  \hline
-1 & 0.090 & 0.502 & 0.429 & -0.401 & 0.875 & 0.882\\
-\hline
-3 & 0.030 & 0.525 & 0.299 & 0.000 & 0.964 & -0.020\\
-\hline
-17 & 0.110 & 0.849 & 0.869 & -0.252 & 0.098 & 0.984\\
-\hline
-18 & 0.040 & 1.000 & 0.568 & 0.881 & -0.035 & 0.019\\
-\hline
-19 & 0.040 & 1.000 & 1.000 & 0.911 & 0.010 & 0.011\\
-
-\hline
-\end{tabular}	 
-\caption{Resultados obtenidos en la corrida de prueba.}
-\end{table}
-
-\begin{flushleft}
-  $ s_{i}:  $	 \textit{ Entrada de la neurona n\'umero i de la capa de entrada.}\\
-  $ o_{i}:  $	 \textit{ Salida de la neurona n\'umero i de la capa de salida. }\\
-  $ o_{1}:  $	 \textit{ Corresponde a un cuadrado.}\\
-  $ o_{2}:  $	 \textit{ Corresponde a un tri\'angulo.}\\
-  $ o_{3}:  $	 \textit{ Corresponde a un c\'irculo.}\\
-\end{flushleft}
 
 	        
 
-\newpage
+
 \subsection{Conclusiones} %conclusiones
 
-	En base a los resultados obtenidos, al proceso de desarrollo de la aplicaci\'on y
-	entrenamiento de la red podemos elaborar las siguientes conclusiones:
 	
-	La preparaci\'on de los datos result\'o ser la tarea de mayor complejidad y clave para
-	lograr buenos resultados en el reconocimiento. Esto incluye la definici\'on de los atributos
-	discriminantes que permitan distinguir a la red entre los distintos tipos de figuras.
-	
-	Por otro lado, las bibliotecas preexistentes en el mundo del software libre orientadas
-	al procesamiento de im\'agenes facilitan la tarea de preparaci\'on y procesamiento 
-	de los datos.
-
-	Existen una gran cantidad de herramientas, y el desaf\'io se encuentra en encontrar
-	la m\'as adecuada y madura para realizar la tarea deseada.
-
-	La elecci\'on del tipo de red neuronal y la definici\'on de los aspectos antes mencionados
-	fue apropiada ya que se obtuvo un alto grado de precisi\'on como puede observarse
-	en los resultados expuestos.
-	
-	El tama\~no de la red no result\'o tan importante como la definici\'on de sus par\'ametros.
-
 \section{Posteriores l\'ineas de Investigaci\'on} %Nuevas lineas de investigacin que se nos fueron ocurriendo
 
 Al presente sistema se le podrían realizar las siguientes mejoras:
