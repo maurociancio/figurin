@@ -7,6 +7,7 @@
 #include <opencv/highgui.h>
 #include <fann.h>
 #include <cvblob.h>
+#include <vector>
 
 using namespace std;
 using namespace cvb;
@@ -62,74 +63,35 @@ double calcularAreaMinBoundingBox(const CvContourPolygon & poly) {
     return (minBoundingBox.size.width*minBoundingBox.size.height);
 }
 
-
-int main(int argc, char** argv)
-{
-
-    if ((argv[1]==NULL)||(argv[2]==NULL)) {
-        cerr << "Debe especificar un archivo de imagen a analizar y la red neuronal a utilizar."<<endl;
-        exit(1);
-    };
-
-    //ruta del archivo de imagen y red neuronal a utilizar
-    char * archivoImagen= argv[1];
-    char * archivoRed= argv[2];
-
-    //cargo imagen a procesar
-    IplImage *img = cvLoadImage(archivoImagen, 1);
+CvBlobs obtenerBlobs(IplImage* img) {
 
     //convierto la imagen a escala de grises
     IplImage *grey = cvCreateImage(cvGetSize(img), IPL_DEPTH_8U, 1);
     cvCvtColor(img, grey, CV_BGR2GRAY);
     cvThreshold(grey, grey, 100, 255, CV_THRESH_BINARY);
-    IplImage *labelImg = cvCreateImage(cvGetSize(grey),IPL_DEPTH_LABEL,1);
+    IplImage *imagenBlobs = cvCreateImage(cvGetSize(grey),IPL_DEPTH_LABEL,1);
 
     //obtengo blobs de la imagen
     CvBlobs blobs;
-    unsigned int result = cvLabel(grey, labelImg, blobs);
+    unsigned int result = cvLabel(grey, imagenBlobs, blobs);
 
     //los filtro por area, elimino los que son muy pequeños
     cvFilterByArea(blobs,AREA_MIN,AREA_MAX);
 
-    //creo imagen con los datos de salida
-    IplImage *imgOut = cvCreateImage(cvGetSize(img), IPL_DEPTH_8U, 3);
-    cvRenderBlobs(labelImg, blobs, img, imgOut,CV_BLOB_RENDER_BOUNDING_BOX |
-                  /*CV_BLOB_RENDER_TO_STD |*/
-                  CV_BLOB_RENDER_CENTROID
-                  |CV_BLOB_RENDER_COLOR );
+    return blobs;
+}
 
-    //Inicializo fuente de texto
-    CvFont fuente;
-    cvInitFont(&fuente, CV_FONT_HERSHEY_PLAIN, 1.0, 1.0, 0, 1, CV_AA);
-
-
-    //Red Neuronal
-
-    //estructura para pasar los datos a la red
-    fann_type entradas[ENTRADAS_RED];
-
-    //estructura para obtener el resultado
-    fann_type *resultado=NULL;
-
-    //creo la red neuronal
-    struct fann *ann = fann_create_from_file(archivoRed);
-
-    //contador de blobs
-    int contador = 1;
-
-    //itero por cada blob
-    for (CvBlobs::const_iterator it=blobs.begin(); it!=blobs.end(); ++it){
-
-        // cvRenderBlob(labelImg, (*it).second, img, imgOut);
+std::vector<double> calcularParametros(const CvBlob& blob) {
+	std::vector<double> v;
 
         //obtengo el poligono que define el blob
-        CvContourPolygon *polygon = cvConvertChainCodesToPolygon(&(*it).second->contour);
+        CvContourPolygon *polygon = cvConvertChainCodesToPolygon(&blob.contour);
 
         //obtengo la maxima distancia de un vertice del poligono al centroide del mismo
-        double maxDist = getMaxDistAlVaricentro((*it).second->centroid.x,(*it).second->centroid.y,*polygon);
+        double maxDist = getMaxDistAlVaricentro(blob.centroid.x,blob.centroid.y,*polygon);
 
         //obtengo el promedio de la distancia de los vertices del poligono al varicentro
-        double sumaDist= getPromedioSqDistancias((*it).second->centroid.x,(*it).second->centroid.y,*polygon);
+        double sumaDist= getPromedioSqDistancias(blob.centroid.x,blob.centroid.y,*polygon);
 
         //relacion promedio de distancias / maxima distancia
         double relDistancias = sumaDist/maxDist;
@@ -144,7 +106,7 @@ int main(int argc, char** argv)
         size_t verticesPoligonoSimple = sPolygon->size();
 
         //obtengo area del blob
-        double areaBlob = (*it).second->area;
+        double areaBlob = blob.area;
 
         //obtengo area del minimo rectangulo que contiene al blob
         double areaMinimoRect = calcularAreaMinBoundingBox(*sPolygon);
@@ -156,57 +118,117 @@ int main(int argc, char** argv)
         double relVertices = verticesPoligonoSimple/MAX_VERTICES;
 
         //Determino de que tipo de figura se trata
-        entradas[0] = relVertices;
-        entradas[1] = relArea;
-        entradas[2] = relDistancias;
-        resultado = fann_run(ann, entradas);
+	v.push_back(relVertices);
+	v.push_back(relArea);
+	v.push_back(relDistancias);
+	return v;
+}
 
-				//Output de los datos en consola
-				cout << "Figura " << contador<< ":" <<endl;
-				cout.precision(4);
-				cout << "s0: " << fixed << relVertices << endl;
-				cout << "s1: " << fixed << relArea << endl;
-				cout << "s2: " << fixed << relDistancias << endl;
-				cout << "o0: " << fixed << resultado[0] << endl;
-				cout << "o1: " << fixed << resultado[1] << endl;
-				cout << "o2: " << fixed << resultado[2] <<  endl;
-        cout<< "Tipo: " << getNombreFigura(resultado[0],resultado[1],resultado[2]) << endl<<endl;
+int main(int argc, char** argv) {
+    if (argc<2)
+	exit(1);
 
+    bool isTraining = false;
+    std::string operacion = argv[1];
+    std::vector<std::string> images;
+    if (operacion == "-t") {
+	isTraining=true;
+	int imageCount = argc - 2;
+	if (!imageCount)
+		std::cerr << "ponele algun imagen, copate";
+		exit(1);
 
-	/*			cout.precision(3);
-				cout << contador << " & "<< fixed << relVertices;
-				cout << " & "<< fixed << relArea;	
-				cout << " & "<< fixed << relDistancias;	
-				cout << " & "<< fixed << resultado[0];
-				cout << " & "<< fixed << resultado[1];
-				cout << " & "<< fixed << resultado[2]<< "\\\\" << endl<< "\\hline" <<endl;
-*/
-//1 & 0.09 & 0.501931 & 0.429022 & -0.400841 & 0.874661 & 0.881913\\
-
-				//dibujo en la imagen el número y el tipo de poligono que se reconoció
-        ostringstream label;
-        label << contador << ". " << getNombreFigura(resultado[0],resultado[1],resultado[2]);
-        CvPoint blobPos = cvPoint((*it).second->minx,(*it).second->maxy+14);
-        CvPoint rectInicio= cvPoint(blobPos.x,blobPos.y+2);
-        CvPoint rectFin= cvPoint(blobPos.x+9*label.str().size(),blobPos.y-12);
-        cvRectangle(imgOut, rectInicio,rectFin, cvScalar(200, 200, 200, 0), CV_FILLED, 8, 0);
-        cvPutText(imgOut,label.str().c_str(),blobPos, &fuente, cvScalar(0, 0, 0, 0));
-
-        delete sPolygon;
-        delete polygon;
-        contador++;
-
+	for (unsigned i=0;i<imageCount;++i) {
+		std::cout << "leyendo img: " << argv[i+2] << std::endl;
+		images.push_back(argv[i+2]);
+	}
     }
 
-    //creo ventanas
-    cvNamedWindow("test", 1);
 
-    //renderizo imagenes
-    cvShowImage("test", imgOut);
-    cvWaitKey(0);
+    // definido si es training o no
 
-    //elimino ventana
-    cvDestroyWindow("test");
+    if (isTraining) {
+
+    } else {
+	    if ((argv[1]==NULL)||(argv[2]==NULL)) {
+	        cerr << "Debe especificar un archivo de imagen a analizar y la red neuronal a utilizar."<<endl;
+	        exit(1);
+	    }
+	    //ruta del archivo de imagen y red neuronal a utilizar
+	    char * archivoImagen= argv[1];
+	    char * archivoRed= argv[2];
+
+        	//cargo imagen a procesar
+	    IplImage *img = cvLoadImage(archivoImagen, 1);
+	    CvBlobs blobs = obtenerBlobs(img);
+
+	    //creo imagen con los datos de salida
+	    IplImage *imgOut = cvCreateImage(cvGetSize(img), IPL_DEPTH_8U, 3);
+	    cvRenderBlobs(labelImg, blobs, img, imgOut,CV_BLOB_RENDER_BOUNDING_BOX |
+	                  /*CV_BLOB_RENDER_TO_STD |*/
+	                  CV_BLOB_RENDER_CENTROID
+	                  |CV_BLOB_RENDER_COLOR );
+
+    	    cvReleaseImage(&img);
+
+	    //Inicializo fuente de texto
+	    CvFont fuente;
+	    cvInitFont(&fuente, CV_FONT_HERSHEY_PLAIN, 1.0, 1.0, 0, 1, CV_AA);
+
+	    //Red Neuronal
+
+	    //estructura para pasar los datos a la red
+	    fann_type entradas[ENTRADAS_RED];
+
+	    //estructura para obtener el resultado
+	    fann_type *resultado=NULL;
+
+	    //creo la red neuronal
+	    struct fann *ann = fann_create_from_file(archivoRed);
+
+	    //contador de blobs
+	    int contador = 1;
+
+	    //itero por cada blob
+	    for (CvBlobs::const_iterator it=blobs.begin(); it!=blobs.end(); ++it){
+		std::vector<double> entrad = calcularParametros(*it);
+	        resultado = fann_run(ann, &entrad[0]);
+	
+		//Output de los datos en consola
+		cout << "Figura " << contador<< ":" <<endl;
+		cout.precision(4);
+		cout << "s0: " << fixed << relVertices << endl;
+		cout << "s1: " << fixed << relArea << endl;
+		cout << "s2: " << fixed << relDistancias << endl;
+		cout << "o0: " << fixed << resultado[0] << endl;
+		cout << "o1: " << fixed << resultado[1] << endl;
+		cout << "o2: " << fixed << resultado[2] <<  endl;
+	        cout<< "Tipo: " << getNombreFigura(resultado[0],resultado[1],resultado[2]) << endl<<endl;
+
+	        ostringstream label;
+	        label << contador << ". " << getNombreFigura(resultado[0],resultado[1],resultado[2]);
+	        CvPoint blobPos = cvPoint((*it).second->minx,(*it).second->maxy+14);
+	        CvPoint rectInicio= cvPoint(blobPos.x,blobPos.y+2);
+	       	CvPoint rectFin= cvPoint(blobPos.x+9*label.str().size(),blobPos.y-12);
+       		cvRectangle(imgOut, rectInicio,rectFin, cvScalar(200, 200, 200, 0), CV_FILLED, 8, 0);
+	        cvPutText(imgOut,label.str().c_str(),blobPos, &fuente, cvScalar(0, 0, 0, 0));
+	
+	        delete sPolygon;
+	        delete polygon;
+	        contador++;
+    	}
+
+	    //creo ventanas
+	    cvNamedWindow("test", 1);
+
+	    //renderizo imagenes
+	    cvShowImage("test", imgOut);
+	    cvWaitKey(0);
+
+	    //elimino ventana
+	    cvDestroyWindow("test");
+    }
+
 
     //libero recursos
     fann_destroy(ann);
