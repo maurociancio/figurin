@@ -201,7 +201,7 @@ int main(int argc, char** argv)
 		if (tipo == 1){
             double elongatedness = calcularElongatedness(*sPolygon);
             entradas[0] = elongatedness;
-	    	cout << "Elongatedness: " << fixed << elongatedness <<  endl;
+	    //	cout << "Elongatedness: " << fixed << elongatedness <<  endl;
     	    resultado = fann_run(annCuadrados, entradas);
 			if (getTipoFiguraBinario(resultado[0],resultado[2])==1)
 				tipo = 1;
