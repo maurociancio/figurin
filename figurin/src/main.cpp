@@ -46,6 +46,7 @@ double getPromedioSqDistancias(const double & xc, const double & yc, const CvCon
     return suma/poly.size();
 }
 
+
 //funcion que devuelve el nombre de la figura que corresponde a la salida de la red neuronal
 string getNombreFigura(int tipo) {
 	switch (tipo){
@@ -70,16 +71,31 @@ int getTipoFiguraBinario(const double & s1,const double & s2) {
 	if (s1==s2) return 1;
 }
 
-
-//funcion que calcula el area del minimo rectangulo que contiene al blob
-double calcularAreaMinBoundingBox(const CvContourPolygon & poly) {
+CvBox2D calcularRectanguloAreaMinima(const CvContourPolygon & poly){
     CvMemStorage* MemStorage = cvCreateMemStorage(0);
     CvSeq * seq = cvCreateSeq(CV_SEQ_ELTYPE_POINT, sizeof(CvSeq),sizeof(CvPoint), MemStorage);
     cvSeqPushMulti( seq,&poly[0],poly.size());
-    CvBox2D minBoundingBox = cvMinAreaRect2(seq);
+    return cvMinAreaRect2(seq);
+}
+
+//funcion que calcula el area del minimo rectangulo que contiene al blob
+double calcularAreaMinBoundingBox(const CvContourPolygon & poly) {
+    CvBox2D minBoundingBox = calcularRectanguloAreaMinima(poly);
     return (minBoundingBox.size.width*minBoundingBox.size.height);
 }
 
+//funcion que calcula la relacion entre ancho y largo del minimo rectangulo que contiene al blob
+double calcularElongatedness(const CvContourPolygon & poly) {
+    CvBox2D minBoundingBox = calcularRectanguloAreaMinima(poly);
+    double height = minBoundingBox.size.height;
+    double width = minBoundingBox.size.width;
+    if( height == width) 
+        return 1;
+    else if (height > width)
+         return width/height;
+    else 
+         return height/width;
+}
 
 int main(int argc, char** argv)
 {
@@ -183,6 +199,9 @@ int main(int argc, char** argv)
 
 		int tipo = getTipoFigura(resultado[0],resultado[1],resultado[2]);
 		if (tipo == 1){
+            double elongatedness = calcularElongatedness(*sPolygon);
+            entradas[0] = elongatedness;
+	    	cout << "Elongatedness: " << fixed << elongatedness <<  endl;
     	    resultado = fann_run(annCuadrados, entradas);
 			if (getTipoFiguraBinario(resultado[0],resultado[2])==1)
 				tipo = 1;
@@ -197,9 +216,9 @@ int main(int argc, char** argv)
 		//Output de los datos en consola
 		cout << "Figura " << contador<< ":" <<endl;
 		cout.precision(4);
-		cout << "s0: " << fixed << relVertices << endl;
-		cout << "s1: " << fixed << relArea << endl;
-		cout << "s2: " << fixed << relDistancias << endl;
+		cout << "s0: " << fixed << entradas[0] << endl;
+		cout << "s1: " << fixed << entradas[1] << endl;
+		cout << "s2: " << fixed << entradas[2] << endl;
 		cout << "o0: " << fixed << resultado[0] << endl;
 		cout << "o1: " << fixed << resultado[1] << endl;
 		cout << "o2: " << fixed << resultado[2] <<  endl;
