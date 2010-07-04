@@ -125,19 +125,25 @@ Se limit\'o la cantidad de cilcos de evoluci\'on a 200.
 
 
 \subsection{Bibliotecas}
-La Bibliotecas utilizadas para el desarrollo de la aplicaci\'on son las
+Las Bibliotecas utilizadas para el desarrollo de la aplicaci\'on son las
 siguientes:
 \begin{itemize}
 
-\item JGAP : es un componente de algoritmos gen\'eticos y programaci\'on gen\'etica provisto como un framework de Java. Provee mecanismos gen\'eticos basicos que pueden ser usados f\'acilmente para aplicar principios evolutivos a soluciones de un problema.
+\item JGAP : es un componente de algoritmos gen\'eticos y programaci\'on gen\'etica provisto como un framework de Java. Provee mecanismos gen\'eticos b\'asicos que pueden ser usados f\'acilmente para aplicar principios evolutivos a soluciones de un problema.
 
 \end{itemize}
        
 
 \subsection{Resultados} %resultados
+Para evaluar los resultados se toma como base las fechas ya jugadas en las que ya se conoce el mejor puntaje que se ha obtenido. Si bien no estamos seguros de que esa sea la mejor soluci\'on, sabemos que es la mejor que se ha obtenido con la informaci\'on de que se dispon\'ia antes de que los partidos se jugaran.
 
+Dado que los jugadores pueden realizar cambios aleatorios y cambios basados en informaci\'on que hay al momento, vemos que un algoritmo gen\'etico puede tener un comportamiento similar. De aqu\'i que las mutaciones le dan ese factor de azar y la funci\'on de selecci\'on permite aprovechar la informaci\'on disponible.
+
+Lo que hacemos entonces es comparar los resultados obtenidos por el algoritmo con los mejores de cada fecha y evaluamos el desv\'io que ocurre entre estos dos. Hay soluciones que son mejores que la mejor de la fecha y otras son peores, pero se busca que la soluci\'on como conjunto sea satisfactoria a lo largo de todo el juego.
+La forma de evaluar entonces el funcionamiento eficiente del algoritmo consiste en ver el resultado general de la soluci\'on en el cual el promedio de los desv\'ios respecto a la mejor soluci\'on conocida sea en favor del algoritmo. Para esto se hacen distintas corridas variando los par\'ametros del algoritmo.
 
 \subsection{Conclusiones} %conclusiones
+En base a los resultados obtenidos, podemos comprobar que si bien el equipo resultante es uno cuyos jugadores son superiores (de acuerdo a como está definida la función de aptitud) a gran parte del total de jugadores, se pueden encontrar ciertas soluciones que pueden parecer mejor. Esto es debido a que los algoritmos gen\'etico no nos brindan la mejor soluci\'on sino que lo que nos brinda es la posibilidad de obtener un grupo de las mejores soluciones, donde no necesariamente estar\'a la mejor. Teniendo en cuenta los par\'ametros de configuraci\'on y la funci\'on de aptitud que fueron utilizados para el desarrollo de la aplicaci\'on, consideramos que el resultado obtenido es aceptable.
 
 	
 \section{Posteriores l\'ineas de Investigaci\'on} %Nuevas lineas de investigacin que se nos fueron ocurriendo
@@ -148,7 +154,7 @@ Al presente sistema se le podrían realizar las siguientes mejoras:
 
 \item  Utilizaci\'on de operadores din\'amicos, esto implica que los operadores se modifiquen durante
 la ejecuci\'on del proceso, por ejemplo, el operador de mutaci\'on podr\'ia incrementar o reducir
-su porcentaje de incidencia en función al resultado que se va obteniendo durante la corrida
+su porcentaje de incidencia en funci\'on al resultado que se va obteniendo durante la corrida
 del sistema.
 \item Modificaci\'on de la funci\'on de aptitud para incluir m\'as restricciones, el sistema podr\'ia tener otros componentes y funcionar en base a otras variables. 
 \item Modificar el operador de selecci\'on para orientar la b\'usqueda m\'as r\'apidamente a las soluciones que mejor se adec\'uan a las reglas del problema.
@@ -223,7 +229,7 @@ Annals of Mathematics and Artificial Intelligence Joumal,
 \bibitem{grandt}
  El Gran DT, 
  \emph{http://www.grandt.com.ar/}.
- Copyright © 2008 Clarín.
+ Copyright © 2008 Clar\'in.
   
 
   
