@@ -47,11 +47,29 @@ double getPromedioSqDistancias(const double & xc, const double & yc, const CvCon
 }
 
 //funcion que devuelve el nombre de la figura que corresponde a la salida de la red neuronal
-string getNombreFigura(const double & s1,const double & s2,const double & s3) {
-    if ((s1>s2)&&(s1>s3)) return "Cuadrado";
-    if ((s2>s1)&&(s2>s3)) return "Triangulo";
-    if ((s3>s1)&&(s3>s2)) return "Circulo";
+string getNombreFigura(int tipo) {
+	switch (tipo){
+		case 1: return "Cuadrado";
+		case 2: return "Triangulo";
+		case 3: return "Circulo";
+		case 4: return "Rectangulo";
+		case 5: return "Elipse";
+	}
 }
+
+//funcion que determina el tipo de figura a partir del output de la red
+int getTipoFigura(const double & s1,const double & s2,const double & s3) {
+    if ((s1>s2)&&(s1>s3)) return 1;
+    if ((s2>s1)&&(s2>s3)) return 2;
+    if ((s3>s1)&&(s3>s2)) return 3;
+}
+
+int getTipoFiguraBinario(const double & s1,const double & s2) {
+    if (s1>s2) return 1;
+    if (s2>s1) return 2;
+	if (s1==s2) return 1;
+}
+
 
 //funcion que calcula el area del minimo rectangulo que contiene al blob
 double calcularAreaMinBoundingBox(const CvContourPolygon & poly) {
@@ -112,8 +130,10 @@ int main(int argc, char** argv)
     fann_type *resultado=NULL;
 
     //creo la red neuronal
-    struct fann *ann = fann_create_from_file(archivoRed);
-
+    struct fann * ann = fann_create_from_file(archivoRed);
+	struct fann * annCuadrados = fann_create_from_file("red_cuadrados_rectangulos.net");
+	struct fann * annCirculos = fann_create_from_file("red_circulos_elipses.net");
+	
     //contador de blobs
     int contador = 1;
 
@@ -161,31 +181,35 @@ int main(int argc, char** argv)
         entradas[2] = relDistancias;
         resultado = fann_run(ann, entradas);
 
-				//Output de los datos en consola
-				cout << "Figura " << contador<< ":" <<endl;
-				cout.precision(4);
-				cout << "s0: " << fixed << relVertices << endl;
-				cout << "s1: " << fixed << relArea << endl;
-				cout << "s2: " << fixed << relDistancias << endl;
-				cout << "o0: " << fixed << resultado[0] << endl;
-				cout << "o1: " << fixed << resultado[1] << endl;
-				cout << "o2: " << fixed << resultado[2] <<  endl;
-        cout<< "Tipo: " << getNombreFigura(resultado[0],resultado[1],resultado[2]) << endl<<endl;
+		int tipo = getTipoFigura(resultado[0],resultado[1],resultado[2]);
+		if (tipo == 1){
+    	    resultado = fann_run(annCuadrados, entradas);
+			if (getTipoFiguraBinario(resultado[0],resultado[2])==1)
+				tipo = 1;
+			else tipo = 4;	
+		} else if (tipo ==3){
+        	resultado = fann_run(annCirculos, entradas);
+			if (getTipoFiguraBinario(resultado[0],resultado[2])==1)
+				tipo = 3;
+			else tipo = 5;	
+		}
+
+		//Output de los datos en consola
+		cout << "Figura " << contador<< ":" <<endl;
+		cout.precision(4);
+		cout << "s0: " << fixed << relVertices << endl;
+		cout << "s1: " << fixed << relArea << endl;
+		cout << "s2: " << fixed << relDistancias << endl;
+		cout << "o0: " << fixed << resultado[0] << endl;
+		cout << "o1: " << fixed << resultado[1] << endl;
+		cout << "o2: " << fixed << resultado[2] <<  endl;
+        cout<< "Tipo: " << getNombreFigura(tipo) << endl<<endl;
 
 
-	/*			cout.precision(3);
-				cout << contador << " & "<< fixed << relVertices;
-				cout << " & "<< fixed << relArea;	
-				cout << " & "<< fixed << relDistancias;	
-				cout << " & "<< fixed << resultado[0];
-				cout << " & "<< fixed << resultado[1];
-				cout << " & "<< fixed << resultado[2]<< "\\\\" << endl<< "\\hline" <<endl;
-*/
-//1 & 0.09 & 0.501931 & 0.429022 & -0.400841 & 0.874661 & 0.881913\\
 
-				//dibujo en la imagen el número y el tipo de poligono que se reconoció
+		//dibujo en la imagen el número y el tipo de poligono que se reconoció
         ostringstream label;
-        label << contador << ". " << getNombreFigura(resultado[0],resultado[1],resultado[2]);
+        label << contador << ". " << getNombreFigura(tipo);
         CvPoint blobPos = cvPoint((*it).second->minx,(*it).second->maxy+14);
         CvPoint rectInicio= cvPoint(blobPos.x,blobPos.y+2);
         CvPoint rectFin= cvPoint(blobPos.x+9*label.str().size(),blobPos.y-12);
@@ -210,6 +234,10 @@ int main(int argc, char** argv)
 
     //libero recursos
     fann_destroy(ann);
+    fann_destroy(annCuadrados);
+    fann_destroy(annCirculos);
+    cvReleaseImage(&imgOut);
+    cvReleaseImage(&imgOut);
     cvReleaseImage(&imgOut);
     cvReleaseImage(&grey);
     cvReleaseImage(&labelImg);
