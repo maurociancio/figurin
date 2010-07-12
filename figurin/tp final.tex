@@ -10,7 +10,7 @@
 \pretolerance=2000
 \tolerance=3000
 
-\title{\textbf{Trabajo Pr\'actico Final \\ Reconocimiento de Figuras Utilizando Redes Neuronales }\\
+\title{\textbf{Trabajo Pr\'actico Final \\ Reconocimiento de Figuras Utilizando Redes Neuronales y Metaconocimiento}\\
 \begin{normalsize}75.70 - Facultad de Ingenier\'ia de la Universidad de Buenos Aires\end{normalsize} }
 
 %\author{ \textbf{Facultad de Ingenier\'ia de la Universidad de Buenos Aires}\\
@@ -43,7 +43,7 @@
 \maketitle
 
 \begin{abstract}
-	El trabajo consiste en el desarrollo de una mejora de la aplicaci\'on de reconocimiento de figuras desarrollada anteriormente a partir del uso y entrenamiento de redes neuronales. Se agrega la capacidad de diferenciar entre cuadrados y rect\'angulos como as\'i tambi\'en entre circulos y elipses. Para ello se utiliza el concepto de metaconocimiento, encadenando redes con la misma estructura que se ven\'ia utilizando para en lugar de utilizar una red m\'as grande. Se agrega adem\'as el uso de un discriminate llamado elongatedness en la entrada de una de las redes.
+	El trabajo consiste en el desarrollo de una mejora de la aplicaci\'on de reconocimiento de figuras desarrollada anteriormente \cite{tp1} a partir del uso y entrenamiento de redes neuronales. Se agrega la capacidad de diferenciar entre cuadrados y rect\'angulos como as\'i tambi\'en entre c\'irculos y elipses. Para ello se utiliza el concepto de metaconocimiento, encadenando redes con la misma estructura que se ven\'ia utilizando en lugar de utilizar una red m\'as grande. Se agrega adem\'as el uso de un discriminate llamado \textit{elongatedness}.
 	
 \end{abstract}
 
@@ -54,13 +54,13 @@
 
 \section{Introducci\'on}
 El presente trabajo utiliza redes neuronales para la detecci\'on de figuras geom\'etricas. 
-La aplicaci\'on desarrollada toma una imagen que contiene figuras (cuadrados, tri\'angulos y c\'irculos), y procesa la misma para lograr la normalizaci\'on de los datos con la finalidad de obtener entradas para la red neuronal. 
+La aplicaci\'on desarrollada toma una imagen que contiene figuras (cuadrados, rect\'angulos, tri\'angulos, c\'irculos y elipses), y procesa la misma para lograr la normalizaci\'on de los datos con la finalidad de obtener entradas para la red neuronal. 
 Una vez procesados los datos de entrada que representan a las figuras de la imagen, la red detecta el tipo de figura.
 
 
 \section{Desarrollo}
 El presente trabajo se encuentra organizado en las siguientes secciones:
-\textit{Estado del arte} nos da una idea de las t\'ecnicas actuales utilizadas en aplicaciones similares en el ámbito de detecci\'on de figuras. 
+\textit{Estado del arte} nos da una idea de las t\'ecnicas actuales utilizadas en aplicaciones similares en el \'ambito de detecci\'on de figuras. 
 \textit{Presentaci\'on del Problema} presenta el dilema a resolver.
 \textit{Resoluci\'on} muestra la definici\'on de la soluci\'on planteada para resolver el problema anterior. 
 \textit{Resultados} muestra luego de aplicar la soluci\'on a un conjunto de entradas que representa al espectro de entradas posibles, las diferentes salidas de la aplicaci\'on desarrollada.
@@ -82,7 +82,7 @@ Se encar\'o el problema dividi\'endolo en dos m\'odulos.
 \item 
 M\'odulo de representaci\'on \cite{rulot}: obtiene, a partir de la imagen provista, una representaci\'on conveniente para su utilizaci\'on por el segundo m\'odulo. La tarea que realiza es el an\'alisis de la imagen de entrada en busca de blobs \cite{blobs} que luego son representados por medio de pol\'igonos de los cuales se extrae informaci\'on caracter\'istica de inter\'es que ser\'a luego alimentada al m\'odulo de la siguiente etapa.
 \item
-M\'odulo de interpretaci\'on \cite{rulot}: proporciona a partir del conjunto de formas u objetos presentes en la imagen y la representaci\'on convenientemente proporcionada por el m\'odulo de representaci\'on, la forma a la que pertenece el objeto, distinguiendo entre 3 posibles casos: cuadrado, tri\'angulo o c\'irculo.
+M\'odulo de interpretaci\'on \cite{rulot}: proporciona a partir del conjunto de formas u objetos presentes en la imagen y la representaci\'on convenientemente proporcionada por el m\'odulo de representaci\'on, la forma a la que pertenece el objeto, distinguiendo entre 3 posibles clusters: figuras tipo rectangular, tri\'angulos o figuras circulares (c\'irculo y elipse).
 \end{itemize}
 
 
@@ -142,7 +142,15 @@ Para la detecci\'on de las figuras, se realiza el siguiente procedimiento:
 				que posee 3 neuronas de salida.
 				\item La neurona que produzca el mayor valor a la salida de la red neuronal corresponde
 				al tipo de figura ingresada.
+				\item La salida de la red neuronal corresponde a un cluster de los antes mencionados. Con el 							objetivo de discriminar entre figuras dentro de un mismo cluster se procede al 									reconocimiento utilizando otra red entrenada especialmente.
+				\item Si la salida corresponde al cluster de figuras rectangulares se calcula un nuevo 									discriminante denominado elongatedness el cu\'al reemplaza una entrada que no 									prove\'ia informaci\'on para la diferenciaci\'on.
 
+  					  \begin{equation} e = \frac { \min(w, h) }
+           				                      { \max(w, h)  }		
+					\end{equation}
+					$ w: $ Ancho del pol\'igono de \'area m\'inima que contiene a la figura. \\
+   					$ h: $ Alto del pol\'igono de \'area m\'inima que contiene a la figura.
+   					
             \end{enumerate}      
 
 Se utiliz\'o una red neuronal del tipo feed-forward entrenada con back-propagation \cite{martinez}. La implementaci\'on utilizada es la que brinda la biblioteca FANN[3]. La topolog\'ia consiste en una capa de entrada con 3 neuronas, una capa oculta con 6 neuronas y una capa de salida con 3 neuronas. Estos valores fueron  definidos luego de realizar varias pruebas con diferentes topolog\'ias posibles y ver que se obten\'ia 
@@ -159,12 +167,12 @@ elegido por arrojar los mejores resultados.
 
 Para el entrenamiento de la red se utilizaron 15 casos provenientes de una imagen con 15 figuras especialmente seleccionadas para intentar cubrir un buen espectro de posibles casos.
    
-             \begin{figure}[H]
-	                  \begin{center}
-	                    \includegraphics[width=5cm]{prueba2.png}
-	                    \caption{\label{entrenamiento} Figuras utilizadas para el entrenamiento. }
-	                  \end{center}
-	            \end{figure}
+%             \begin{figure}[H]
+%	                  \begin{center}
+%	                    \includegraphics[width=5cm]{prueba2.png}
+%	                    \caption{\label{entrenamiento} Figuras utilizadas para el entrenamiento. }
+%	                  \end{center}
+%	            \end{figure}
 
 
 %\includegraphics{Screenshot.png}
@@ -200,56 +208,20 @@ En la figura \ref{salida_ejemlpo} se puede apreciar la salida de la aplicaci\'on
 
 	                  \begin{center}
 	                %	\advance\leftskip-1.5cm
-	                    \includegraphics[width=10cm]{salida.png}
+	                    \includegraphics[width=10cm]{salida2.png}
 	                    \caption{\label{salida_ejemlpo} Salida generada por la aplicaci\'on. }
 	                  \end{center}
 	            \end{figure}
 
-%\newpage
-
-En la siguiente tabla se pueden apreciar algunos de los datos de entrada y salida de la red neuronal aplicada al caso de prueba presentado.
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{|l|c|c|c|c|c|c|c|}
-  \hline                       
-  \textbf{Figura} & \textbf{s1} & \textbf{s2} & \textbf{s3} & \textbf{o1} & \textbf{o2} & \textbf{o3}\\
-  \hline
-1 & 0.090 & 0.502 & 0.429 & -0.401 & 0.875 & 0.882\\
-\hline
-3 & 0.030 & 0.525 & 0.299 & 0.000 & 0.964 & -0.020\\
-\hline
-17 & 0.110 & 0.849 & 0.869 & -0.252 & 0.098 & 0.984\\
-\hline
-18 & 0.040 & 1.000 & 0.568 & 0.881 & -0.035 & 0.019\\
-\hline
-19 & 0.040 & 1.000 & 1.000 & 0.911 & 0.010 & 0.011\\
-
-\hline
-\end{tabular}	 
-\caption{Resultados obtenidos en la corrida de prueba.}
-\end{table}
-
-\begin{flushleft}
-  $ s_{i}:  $	 \textit{ Entrada de la neurona n\'umero i de la capa de entrada.}\\
-  $ o_{i}:  $	 \textit{ Salida de la neurona n\'umero i de la capa de salida. }\\
-  $ o_{1}:  $	 \textit{ Corresponde a un cuadrado.}\\
-  $ o_{2}:  $	 \textit{ Corresponde a un tri\'angulo.}\\
-  $ o_{3}:  $	 \textit{ Corresponde a un c\'irculo.}\\
-\end{flushleft}
-
-	        
-
-\newpage
+El cambio introducido no impact\'o en aquellas figuras que se reconoc\'ian correctamente (tri\'angulos, cuadrados y c\'irculos), adem\'as realiza una correcta distinci\'on de elipses y rect\'angulos.
+      
 \subsection{Conclusiones} %conclusiones
 
 	En base a los resultados obtenidos, al proceso de desarrollo de la aplicaci\'on y
 	entrenamiento de la red podemos elaborar las siguientes conclusiones:
 	
-	La preparaci\'on de los datos result\'o ser la tarea de mayor complejidad y clave para
-	lograr buenos resultados en el reconocimiento. Esto incluye la definici\'on de los atributos
-	discriminantes que permitan distinguir a la red entre los distintos tipos de figuras.
-	
+	Se sustentan las conclusiones del \textit{paper} anterior\cite{tp1}  con respecto a la importancia del procesamiento de las figuras para obtener los par\'ametros de entrada de la red.
+
 	Por otro lado, las bibliotecas preexistentes en el mundo del software libre orientadas
 	al procesamiento de im\'agenes facilitan la tarea de preparaci\'on y procesamiento 
 	de los datos.
@@ -261,6 +233,8 @@ En la siguiente tabla se pueden apreciar algunos de los datos de entrada y salid
 	fue apropiada ya que se obtuvo un alto grado de precisi\'on como puede observarse
 	en los resultados expuestos.
 	
+	El concepto de metaconocimiento nos permite simplificar la tarea de reconocimiento de figuras dividiendo el problema en varias etapas sencillas. Luego de una primera clasificaci\'on de alto nivel se procede a analizar en detalle los casos mas espec\'ificos y que requieren t\'ecnicas de reconocimiento mas refinadas.
+	
 	El tama\~no de la red no result\'o tan importante como la definici\'on de sus par\'ametros.
 
 \section{Posteriores l\'ineas de Investigaci\'on} %Nuevas lineas de investigacin que se nos fueron ocurriendo
@@ -268,13 +242,18 @@ En la siguiente tabla se pueden apreciar algunos de los datos de entrada y salid
 \begin{itemize}
 \item 	Mejora del proceso de reconocimiento de blobs para realizar el reconocimiento directamente sobre im\'agenes m\'as complejas o fotograf\'ias.
 \item 	Identificar y utilizar m\'ayor cantidad de atributos discriminantes en la entrada de la red para mejorar la precisi\'on del reconocimiento.
-\item 	Extensi\'on del conjunto de figuras a ser reconocidas utilizando el m\'etodo presentado en este trabajo.
-\item 	Utilizaci\'on de redes neuronales de otros tipos de redes neuronales en el m\'odulo de interpretaci\ 'on para la clasificaci\'on de las figuras, comparando los resultados con la utilizada actualmente.
+\item 	Utilizaci\'on de redes neuronales de otros tipos de redes neuronales en el m\'odulo de interpretaci\'on para la clasificaci\'on de las figuras, comparando los resultados con la utilizada actualmente.
+\item Variaci\'on de los par\'ametros de la red utilizada para alcanzar los mismos resultados con menor nivel de procesamiento. Entre estos par\'ametros se puede variar el nivel de sin\'apsis y cantidad de neuronas de la capa oculta.
 
 \end{itemize}
-\newpage
 
 \begin{thebibliography}{9}
+
+\bibitem{tp1}
+	Ciancio Alessio, Gilioli, Lopez El\'ias, Ucciani, Yoan.
+	\emph{Reconocimientos de Figuras Utilizando Redes Neuronales.}
+	Facultad de Ingenier\'ia, UBA. 75.70
+	2010.
 
 \bibitem{martinez}
  García Mart\'inez, Servente y Pasquini.
@@ -383,6 +362,8 @@ En la siguiente tabla se pueden apreciar algunos de los datos de entrada y salid
 
 \bibitem{repo}
 	Repositorio GIT con c\'odigo fuente y documentaci\'on. http://github.com/maurociancio/figurin
+	
+
   
 \end{thebibliography}
 
